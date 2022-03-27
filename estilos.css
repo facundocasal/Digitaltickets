@@ -45,7 +45,7 @@ nav{
 .banner__final{
     margin: 2rem 0;
     height: 300px;
-    background-color: coral;
+    background-color: cadetblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,5 +59,12 @@ nav{
 .imagenDonde{
     width: 250px;
     margin: auto;
-    height: 300px;
+    height: 250px;
+}
+.donde__card__item{ 
+    border-radius: 3rem;
+    padding: 1rem;
+}
+iframe{
+    border-radius: 1rem;
 }
