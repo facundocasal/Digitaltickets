@@ -68,7 +68,11 @@ nav{
 iframe{
     border-radius: 1rem;
 }
+
+.imagenCarrusel{
+    height: 450px;
+}
 footer{
-    height: 50px;
+    height: 80px;
     background-color: #ffefd5;
 }
