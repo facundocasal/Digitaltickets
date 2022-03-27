@@ -68,3 +68,7 @@ nav{
 iframe{
     border-radius: 1rem;
 }
+footer{
+    height: 50px;
+    background-color: #ffefd5;
+}
