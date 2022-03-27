@@ -54,9 +54,10 @@ nav{
 .donde__card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .imagenDonde{
-    width: 90%;
+    width: 250px;
     margin: auto;
     height: 300px;
 }
