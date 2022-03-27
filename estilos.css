@@ -1,0 +1,57 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background: linear-gradient(to bottom , pink, #ffefd5, white);
+}
+
+.banner{
+    /* fondo  */
+    height: 100vh;
+    background-color: coral;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.frase{
+    margin: 1rem 0;
+    background: linear-gradient(to left , black , darkslategrey, black);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Banner__contenido{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.donde{
+    background: linear-gradient(to bottom , pink , darkslategrey, white);
+    
+}
+.imagenDonde{
+    width: 100%;
+    height: 200px;
+}
+.donde__tiutlo{
+    text-align: center;
+}
+.donde__card{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    max-width: 100%;
+    max-height: 400px;
+}
+
