@@ -21,10 +21,11 @@ nav{
     background-image: url('imagenes/img1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     width: 100%;
 }
 .Banner__contenido{
-    width: 70%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     text-align: center;
