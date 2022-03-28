@@ -6,6 +6,9 @@
 nav{
     background: linear-gradient(to bottom , pink, #ffefd5, white);
 }
+p{
+    margin-bottom: 0;
+}
 
 .banner{
     /* fondo  */
@@ -32,8 +35,9 @@ nav{
     text-align: center;
 }
 .donde{
-    background: linear-gradient(to bottom , pink , darkslategrey, white);
-    
+    background-image: url(https://crehana-blog.s3.amazonaws.com/media/filer_public/c4/e8/c4e80f21-7628-4e32-9175-0da572270f8f/fondos_invitaciones_con_plantas_2.jpg);
+    background-size: contain;
+    padding: 1rem;  
 }
 
 .confirmacion__nombre__item{
@@ -43,12 +47,34 @@ nav{
 }
 
 .banner__final{
-    margin: 2rem 0;
-    height: 300px;
-    background-color: cadetblue;
+    height: 450px;
+    position: relative;
+    background: black;
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.banner__final::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('imagenes/img3.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+.banner__final__titulo{
+    color: white;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
 }
 
 .donde__card{
@@ -62,8 +88,8 @@ nav{
     height: 250px;
 }
 .donde__card__item{ 
-    border-radius: 3rem;
-    padding: 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
 }
 iframe{
     border-radius: 1rem;
