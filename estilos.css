@@ -1,34 +1,36 @@
 *{
     padding: 0;
     margin: 0;
+
 }
 p{
     margin-bottom: 0;
 }
 
-/* NavBar */
-
-nav{
-    background: linear-gradient(to bottom , pink, #ffefd5, white);
-}
-
-
 /* baneer */
 
 .banner{
-    /* fondo  */
+    font-family: 'Alex Brush', cursive;
+
+    letter-spacing: 3px;
     height: 100vh;
-    background-image: url('imagenes/img1.jpg');
-    background-repeat: no-repeat;
+    background-image: url('imagenes/fondo.png');
+    background-size: 80% 80%;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
 }
-.Banner__contenido{
-    max-width: 70%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+
+.encabezado{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-align: c;
+        align-content: center;
+        justify-content: space-around
+    
 }
 
 /* frase */
