@@ -11,8 +11,7 @@ p{
 
 .banner{
     font-family: 'Alex Brush', cursive;
-
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     height: 100vh;
     background-image: url('imagenes/fondo.png');
     background-size: 80% 80%;
@@ -21,17 +20,56 @@ p{
     background-position: center center;
     width: 100%;
 }
-
 .encabezado{
         height: 65vh;
         display: flex;
         flex-direction: column;
         text-align: center;
-        text-align: c;
         align-content: center;
-        justify-content: space-around
-    
+        justify-content: space-evenly 
 }
+.flecha{
+    font-size: 2rem;
+}
+/* Cuando */
+.cuando{
+        margin: 0.5rem 0;
+        padding: 1rem;
+        height: 100vh;
+        text-align: center;
+        background-position: center center;
+        background-image: url('imagenes/img1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+}
+.cuando:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.cuando__contenido{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-family: 'Alex Brush', cursive;
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.cuando__contenido__titulo{
+    font-size: 3rem;
+}
+
+
 
 /* frase */
 
@@ -47,28 +85,25 @@ p{
 
 /* Donde */
 
-.donde{
-    background-image: url(https://crehana-blog.s3.amazonaws.com/media/filer_public/c4/e8/c4e80f21-7628-4e32-9175-0da572270f8f/fondos_invitaciones_con_plantas_2.jpg);
-    background-size: contain;
-    padding: 1rem;  
+
+.donde__img{
+    border-radius: 100%;
+    border: 3px solid burlywood;
+
 }
 
-.donde__card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.imagenDonde{
-    width: 250px;
-    margin: auto;
-    height: 250px;
-}
-.donde__card__item{ 
-    border-radius: 2rem;
-    padding: 0.5rem;
-}
 iframe{
-    border-radius: 1rem;
+    width: 50%;
+}
+
+/* dress */
+
+.dress{
+    width: 250px;
+    height: auto;
+}
+.dress__estilo{
+    font-size: 1.5rem;
 }
 
 /* imagenes carrusel */
@@ -79,9 +114,11 @@ iframe{
 
 
 /* confirmacion */
-
+.confirmacion{
+    background: rgb(51,60,79);
+    background: linear-gradient(90deg, rgba(51,60,79,1) 0%, rgba(77,140,134,1) 20%, rgba(101,214,184,1) 50%, rgba(77,140,134,1) 80%, rgba(51,60,79,1) 100%);
+}
 .confirmacion__nombre__item{
-    border: none;
     border-bottom: 2px black solid;
     border-radius: 1rem;
 }
@@ -104,6 +141,6 @@ iframe{
 /* footer  */
 
 footer{
-    height: 80px;
+    height: 50px;
     background-color: #ffefd5;
 }

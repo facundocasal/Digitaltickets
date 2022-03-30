@@ -28,7 +28,7 @@ const countdown = (deadline , elem , finalMessage) => {
         
         let t = getRemainTime(deadline);
 
-        el.innerHTML = `${t.remainDays} Dias : ${t.remainHours}Hs : ${t.remainMinutos}Min : ${t.remainseconds}Seg`
+        el.innerHTML = `<strong>${t.remainDays} Dias : ${t.remainHours} Hs : ${t.remainMinutos} M : ${t.remainseconds} S</strong>`
         
         if (t.remainTime <= 1){
             clearInterval(timeUpdate)
@@ -40,4 +40,4 @@ const countdown = (deadline , elem , finalMessage) => {
 
 
 
-countdown(`Oct 15 2022 00:00:00 GMT-0300` ,`temporizador`,`Es Hoy`)
+countdown(`Oct 22 2022 00:00:00 GMT-0300` ,`temporizador`,`Es Hoy`)
