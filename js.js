@@ -28,7 +28,7 @@ const countdown = (deadline , elem , finalMessage) => {
         
         let t = getRemainTime(deadline);
 
-        el.innerHTML = `<strong>${t.remainDays} Dias : ${t.remainHours} Hs : ${t.remainMinutos} M : ${t.remainseconds} S</strong>`
+        el.innerHTML = `${t.remainDays} Dias : ${t.remainHours} Hs : ${t.remainMinutos} M : ${t.remainseconds} S`
         
         if (t.remainTime <= 1){
             clearInterval(timeUpdate)
@@ -41,3 +41,22 @@ const countdown = (deadline , elem , finalMessage) => {
 
 
 countdown(`Oct 22 2022 00:00:00 GMT-0300` ,`temporizador`,`Es Hoy`)
+
+// msj whatsapp
+function mensaje () {
+    let asistire = document.getElementById("asistire").value;
+    let noAsistire = document.getElementById("asistire");
+    let ComidaVeganaSi = document.getElementById("ComidaVeganaSi");
+    let comidaCeliaca = document.getElementById("comidaCeliaca");
+    let ninguno = document.getElementById("ninguno").value;
+    let telWhatsapp = document.getElementById("Whatsapp1");
+
+
+        telWhatsapp.setAttribute("href",`https://wa.me/541160410242/?text=confirmo${asistire} con${ninguno}alabodadeluchoyluciana`)
+
+
+}
+
+mensaje()
+
+

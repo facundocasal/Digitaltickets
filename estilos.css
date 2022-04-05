@@ -7,34 +7,72 @@ p{
     margin-bottom: 0;
 }
 
+
 /* baneer */
 
 .banner{
-    font-family: 'Alex Brush', cursive;
-    letter-spacing: 5px;
     height: 100vh;
     background-image: url('imagenes/fondo.png');
     background-size: 80% 80%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
+
 }
 .encabezado{
-        height: 65vh;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-content: center;
-        justify-content: space-evenly 
+        justify-content: space-between;
 }
+.efectoEscritura{
+    display: block;
+    white-space: nowrap;
+    border-right:  4px solid #333;
+    width: 11ch;
+    animation: typing 3s steps(11), blink .5s infinite step-end alternate;
+    overflow: hidden; 
+}
+/* .efectoEscritura{
+    display: block;
+    white-space: nowrap;
+    border-right:  4px solid #333;
+    width: 27ch;
+    animation: typing 2s steps(27), blink .5s infinite step-end alternate;
+    overflow: hidden;
+} */
+
+
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes blink {
+    50%{border-color: transparent;}
+}
+
+
+
+
+
 .flecha{
     font-size: 2rem;
+    color: #333;
 }
+
+.titulos{
+    font-size: 5.5rem;
+    font-family: 'Alex Brush', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
 /* Cuando */
+
+
 .cuando{
         margin: 0.5rem 0;
-        padding: 1rem;
+        padding: 0.2rem;
         height: 100vh;
         text-align: center;
         background-position: center center;
@@ -53,9 +91,6 @@ p{
 	background-color: rgba(0,0,0,0.6);
 }
 .cuando__contenido{
-    font-size: 1.3rem;
-    letter-spacing: 3px;
-    font-family: 'Alex Brush', cursive;
     position: relative;
     color: white;
     height: 100%;
@@ -65,62 +100,66 @@ p{
     align-content: center;
     justify-content: space-between;
 }
-.cuando__contenido__titulo{
-    font-size: 3rem;
-}
 
+.cuando__contenido__texto{
+    font-size: 2rem;
+}
 
 
 /* frase */
 
-.frase{
-    margin: 1rem 0;
-    background: linear-gradient(to left , black , darkslategrey, black);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
 /* Donde */
 
 
-.donde__img{
-    border-radius: 100%;
-    border: 3px solid burlywood;
-
+.donde__Card {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
-iframe{
+.donde__Card__imagen{
     width: 50%;
 }
-
-/* dress */
-
-.dress{
-    width: 250px;
-    height: auto;
+.donde__Card__imagen img {
+    width: 100%;
+    height: 400px;
 }
-.dress__estilo{
+.donde__Card__texto{
     font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+.card__button{
+    margin-top: 1rem;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    margin: 0.5rem;
+}
+.textoModal{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+
 }
 
-/* imagenes carrusel */
-
+.dressCode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dressCode__imgen img {
+    width: 300px;
+}
+.dressCode__texto{
+    font-size: 3rem;
+    ;
+}
 .imagenCarrusel{
     height: 450px;
-}
-
-
-/* confirmacion */
-.confirmacion{
-    background: rgb(51,60,79);
-    background: linear-gradient(90deg, rgba(51,60,79,1) 0%, rgba(77,140,134,1) 20%, rgba(101,214,184,1) 50%, rgba(77,140,134,1) 80%, rgba(51,60,79,1) 100%);
-}
-.confirmacion__nombre__item{
-    border-bottom: 2px black solid;
-    border-radius: 1rem;
 }
 
 
@@ -135,6 +174,38 @@ iframe{
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+}
+
+
+@media screen and (max-width: 425px){
+    .titulos{
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    .Banner__contenido__texto{
+        font-size: 1rem;
+    }
+    .cuando__contenido__texto{
+        font-size: 1.2rem;
+    }
+    .donde__Card{
+        flex-direction: column;
+        margin: 1rem 0;   
+    }
+    .rev{
+        flex-direction: column-reverse;
+    }
+    .donde__Card__imagen{
+        width: 95%;
+        margin: auto;
+    }
+    .donde__Card__imagen img{
+        height: 350px;
+    }
+    .donde__Card__texto{
+        font-size: 1rem;
+        width: 100%;
+    }
 }
 
 

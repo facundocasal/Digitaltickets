@@ -1,103 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitaciones - Boda </title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-    <!-- banner principal -->
-    <div class="banner container-fluid">
+    <!-- banner principal  -->
+    <div class="banner">
         <div class=" text-black w-100 h-100 d-flex justify-content-around align-items-center">
             <div class="Banner__contenido " data-aos="fade-up" data-aos-duration="3000">
-                <div class="fw-bold encabezado ">
+                <div class="fw-bold encabezado  ">
                     <div>
-                        <h1>Nos Casamos !!</h1>
+                        <h1 class="titulos efectoEscritura">Nos Casamos!!</h1>
                     </div>
                     <div>
-                        <h1>Luis & Luciana</h1>
+                        <h1 class="titulos efectoEscritura">Luis & Luciana</h1>
                     </div>
                     <div>
-                        <h3>Queremos invitarte a que seas<br>parte de nuestro sueño</h3> <br>
+                        <h3 class="Banner__contenido__texto" >Queremos invitarte a que seas<br>parte de nuestro sueño</h3> <br>
                     </div>
                     <div>
-                        <i class="fa-solid fa-angle-down fa-bounce flecha" ></i>
+                        <a href="#cuando"><i class="fa-solid fa-angle-down fa-bounce flecha" ></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- fin banner principal -->
-    <!-- frase  -->
-    <div class="frase">
-        <div class="Banner__contenido">
-            <div class="">
-                <h1>FRASE A ELECCION</h1>
-            </div>
-        </div>
-    </div>
-    <!-- fin frase -->
 
+    <!-- fin banner principal  -->
     <!-- Cuando -->
-    <div class="cuando" data-aos="zoom-out">
+    <div id="cuando" class="cuando" >
         <div class="cuando__contenido" >
             <div>
-                <p class="cuando__contenido__titulo"><strong>Cuando</strong></p>
-                <p><strong> Sabado 22<br>De Octubre Del 2022 </strong></p>
+                <p class="titulos"><strong>Cuando</strong></p>
+                <p class="cuando__contenido__texto"> Sabado 22 De Octubre Del 2022</p>
             </div>
             <div >
-                <p class="cuando__contenido__titulo"><strong>Faltan</strong></p>
-                <p class="temporizador" id="temporizador"></p>
+                <p class="titulos"><strong>Faltan</strong></p>
+                <p class="cuando__contenido__texto" id="temporizador"></p>
             </div>
         </div>
     </div>
-
     <!-- fin Cuando -->
 
-
-    <!-- donde  -->
+    <!-- donde -->
+    <div>
         <div>
-            <h1 class="fw-bold text-uppercase text-center">Donde</h1>
-        
-            <div class="container-fluid d-flex align-items-center justify-content-around">
-                <div class="p-1">
-                    <img class="img-fluid donde__img" src="https://i.pinimg.com/originals/1b/50/e9/1b50e9339443c9ccecff0ccce936d958.jpg" alt="">
-                </div>
-                <div class="d-flex flex-column ">
-                    <p class="m-1 text-center"><strong>direccion:</strong> calle falsa 123 , Palermo , Caba <i
-                        class="bi bi-caret-down-fill"></i></p>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-info fw-bold " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <h1 class="titulos">donde</h1>
+        </div>
+        <div class="donde__Card">
+            <div class="donde__Card__imagen">
+                <img  src="https://i.pinimg.com/originals/1b/50/e9/1b50e9339443c9ccecff0ccce936d958.jpg" alt="">
+            </div>
+            <div class="donde__Card__texto mt-1">
+                <h3 class="fw-bold">Ceremonia Religiosa </h3>
+                <p> <strong>Parroquia Santa Ana y San Joaquín</strong></p>
+                <p> <strong>Horario:</strong> 18:00 Hs</p>
+                <p class=""><strong>direccion:</strong> calle falsa 123 , Palermo , Caba <i
+                    class="bi bi-caret-down-fill"></i></p>
+                <button type="button" class="btn btn-info fw-bold card__button" data-bs-toggle="modal" data-bs-target="#religiosa">
                         Ver Mapa
-                    </button>
-        
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                </button>
+                <div class="modal fade" id="religiosa" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="modal-content">
+                            <div class="modal-content ">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Mapa</h5>
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Mapa</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body d-flex align-content-center">
+                                <div class="modal-body flex-column d-flex align-content-center">
                                     <iframe class="m-1"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.067841824924!2d-58.478965585233546!3d-34.602445964936884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb61d019b524d%3A0x5d104f1a33a78224!2sLa%20Casa%20de%20D10S!5e0!3m2!1ses-419!2sar!4v1648412311250!5m2!1ses-419!2sar"
                                         style="border:0;" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="textoModal">
+                                    <p><strong>Parroquia Santa Ana y San Joaquín</strong></p>
                                     <p class="text-center"><strong>direccion:</strong> calle falsa 123 , Palermo , Caba <i
                                             class="bi bi-caret-down-fill"></i></p>
+                                </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-info fw-bold" data-bs-dismiss="modal">Cerrar</button>
@@ -105,77 +96,134 @@
                             </div>
                         </div>
                     </div>
+            </div>
+
+        </div>
+        <div class="donde__Card rev mt-1">
+            <div class="donde__Card__texto mt-1">
+                <h3 class="fw-bold">Fiesta </h3>
+                <p><strong>Salon SAN AGUSTÍN</strong></p>
+                <p><strong>Horario:</strong> 20:00 Hs</p>
+                <p class=""><strong>direccion:</strong> calle falsa 123 , Palermo , Caba <i
+                    class="bi bi-caret-down-fill"></i></p>
+                <button type="button" class="btn btn-info fw-bold card__button " data-bs-toggle="modal" data-bs-target="#miModal">
+                        Ver Mapa
+                </button>
+                <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Mapa</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex  flex-column align-content-center">
+                                    <iframe class="m-1"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.067841824924!2d-58.478965585233546!3d-34.602445964936884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb61d019b524d%3A0x5d104f1a33a78224!2sLa%20Casa%20de%20D10S!5e0!3m2!1ses-419!2sar!4v1648412311250!5m2!1ses-419!2sar"
+                                        style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="textoModal">
+                                    <p><strong>Salon SAN AGUSTÍN</strong></p>
+                                    <p class="text-center"><strong>direccion:</strong> calle falsa 123 , Palermo , Caba <i
+                                            class="bi bi-caret-down-fill"></i></p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info fw-bold" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
+            <div class="donde__Card__imagen">
+                <img  src="https://cdn0.bodas.com.mx/vendor/3783/3_2/960/jpg/bombillas-xv_5_53783-160478000916980.jpeg" alt="">
+            </div>
         </div>
-    <!-- fin de DONDE  -->
+    </div>
+    <!--fin de donde  -->
 
     <!-- Drees code  -->
 
-    <div class="mt-3 d-flex flex-column">
-        <div class="m-1 text-center">
-            <h1 class="fw-bold text-uppercase ">dressCode</h1>
-        </div>
-        <div class="m-auto">
-            <img class="img-fluid dress" src="imagenes/dressCode.png" alt="dressCode">
-        </div>
-        <div class="m-1 text-center">
-            <p class=" fst-italic  fw-bold dress__estilo">Elegante</p>
-        </div>
-    </div>
-
-
-    <!-- fin de Drees code  -->
-
-
-
-    <!-- carrusel -->
-
-    <div class="mt-3" id="fotos">
-        <div>
-            <h1 class=" text-center fw-bold text-uppercase">fotos <i class="fa-solid fa-camera-retro"></i></h1>
-        </div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide overflow-hidden p-2 " data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagenes/img1.jpg" class="d-block w-100 imagenCarrusel" alt="...">
+        <div >
+            <div class="">
+                <h1 class="titulos">DressCode</h1>
+            </div>
+            <div class="dressCode">
+                <div class="dressCode__imgen">
+                    <img class="img-fluid" src="imagenes/dressCode.png" alt="dressCode">
                 </div>
-                <div class="carousel-item">
-                    <img src="imagenes/img2.png" class="d-block w-100 imagenCarrusel" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/img3.jpg" class="d-block w-100 imagenCarrusel" alt="...">
+                <div class="dressCode__texto fst-italic">
+                    <p>Elegante</p>
                 </div>
             </div>
         </div>
+    
+    
+    <!-- fin de Drees code  -->
 
-    </div>
+    <!-- carrusel -->
+
+        <div class="mt-3" id="fotos">
+            <div>
+                <h1 class=" text-center titulos ">Nuestros Momentos </h1>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide overflow-hidden p-2 " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/img1.jpg" class="d-block w-100 imagenCarrusel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/img2.png" class="d-block w-100 imagenCarrusel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/img3.jpg" class="d-block w-100 imagenCarrusel" alt="...">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
     <!-- fin carrusel  -->
 
     <!-- mesa de regalos  -->
-    <div class="mt-3 overflow-hidden  text-center" data-aos="zoom-in" id="mesaDeRegalos">
-        <h1 class="fw-boldfst-italic text-center"> Mesa de Regalos <i class="fa-solid fa-gift fa-beat-fade"></i></h1>
-        <p class="text-center fw-bold">Si queres ayudarnos a cumplir
-            nuestros sueños podes ayudarnos por aca <i class="fa-solid fa-square-arrow-down"></i></p>
-        <p class=" text-center m-3">
-            <strong>CBU:</strong> 4as65d4a65d46a5d <br>
-            <strong>Alias:</strong> casa.perro.gato <br>
-            <strong>Titular:</strong> lucho&luciana
-        </p>
-        <h2 class="text-center m-1"><strong>Gracias</strong></h2>
-    </div>
+        <div class="mt-3 overflow-hidden  text-center"  id="mesaDeRegalos">
+            <h1 class="fw-boldfst-italic text-center titulos"> Mesa de Regalos </h1>
+            <p class="text-center fw-bold">Si queres ayudarnos a cumplir
+                nuestros sueños podes ayudarnos por aca <i class="fa-solid fa-square-arrow-down"></i></p>
+            <p class=" text-center m-3">
+                <strong>CBU:</strong> 4as65d4a65d46a5d <br>
+                <strong>Alias:</strong> casa.perro.gato <br>
+                <strong>Titular:</strong> lucho&luciana
+            </p>
+            <h2 class="text-center m-1"><strong>Gracias</strong></h2>
+        </div>
     <!-- fin mesa de reaglos  -->
 
     <!-- confirmacion de asistencia  -->
 
-    <div id="confirmacion" data-aos="zoom-out" class="mt-4 confirmacion  m-auto p-3 ">
-        <h3 class="fw-bold fst-italic text-center text-light text-uppercase">confirmar asistencia</h3>
+    <div id="confirmacion"  class="mt-4 confirmacion  m-auto p-3 ">
+        <h3 class=" titulos">confirmar asistencia</h3>
         <div class="text-center ">
-            <button type="button" class="btn btn-success p-2 mt-1 "><a
+            <p>por favor confirmar asistencia</p>
+            <form>
+                <input type="checkbox" id="asistire"  value="asistire" >
+                <label for="asistire">asistire</label>
+                <input type="checkbox" id="noAsistire"  value="no asistire">
+                <label for="no asistire">no asistire </label>
+            </form>
+            <p>Pedidos Especiales </p>
+            <form action="">
+                <input type="checkbox" id="ComidaVeganaSi" value="comida Vegana">
+                <label for="si">Comida Vegana  </label>
+                <input type="checkbox" id="comidaCeliaca" value="Comida Celiaca">
+                <label for="no">Comida Celiaca  </label>
+                <input type="checkbox" id="ninguno" name="ninguno" value="ninguno">
+                <label for="no">ninguno</label> 
+            </form>
+            <button type="button" id="Whatsapp1"  class="btn btn-success p-2 mt-1 "><a
                     class="text-decoration-none text-light fw-bold fst-italic"
-                    href="https://wa.me/541160410242/?text=confirmo asistencia a la boda de lucho y luciana"> confirmar
+                    > confirmar
                     con lucho <i class="fa-brands fa-whatsapp fw-bold"></i></a></button>
-            <button type="button" class="btn btn-success p-2 mt-1 "><a
+            <button type="button" id="Whatsapp2" class="btn btn-success p-2 mt-1 "><a
                     class="text-decoration-none text-light fw-bold fst-italic"
                     href="https://wa.me/541160410242/?text=confirmo asistencia a la boda de lucho y luciana"> confirmar
                     con luciana <i class="fa-brands fa-whatsapp fw-bold"></i></a></button>
@@ -183,39 +231,26 @@
 
     </div>
     <!-- fin confirmacion de asistencia  -->
+    
 
-    <!-- banner final  -->
-    <div class="banner__final mt-2">
-        <div class="bg-black bg-opacity-50 w-100 h-100 d-flex justify-content-around align-items-center">
-            <div class="Banner__contenido" data-aos="fade-up" data-aos-duration="3000">
-                <div class="banner__final__titulo text-center">
-                    <h1 class="text-light">Luis & luciana</h1>
-                    <p class="text-light">Te Esperamos </p>
+
+
+
+
+
+        <!-- banner final  -->
+        <div class="banner__final mt-2">
+            <div class="bg-black bg-opacity-50 w-100 h-100 d-flex justify-content-around align-items-center">
+                <div class="Banner__contenido" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="banner__final__titulo text-center">
+                        <h1 class="text-light titulos">Luis & Luciana</h1>
+                        <p class="text-light">Te Esperamos </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- banner final fin  -->
-
-
-    <!-- footer -->
-    <footer class="d-flex align-items-center justify-content-center">
-        <div>
-            <a href="index.html" class="text-decoration-none"><img src="imagenes/pngwing.com.png" alt="logo"></a>
-        </div>
-        <div>
-            <p class="text-center"><strong> queres que hagamos tu invitacion haz <a href="index.html"
-                        class="text-decoration-none">click aqui </a></strong></p>
-        </div>
-        <div>
-            <a href="index.html" class="text-decoration-none"><img src="imagenes/pngwing.com.png" alt="logo"></a>
-        </div>
-    </footer>
-    <!-- fin de footer  -->
-
-
-
+    
+        <!-- banner final fin  -->
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -229,6 +264,9 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="js.js"></script>
+
+
+
 </body>
 
 </html>
