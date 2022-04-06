@@ -42,21 +42,54 @@ const countdown = (deadline , elem , finalMessage) => {
 
 countdown(`Oct 22 2022 00:00:00 GMT-0300` ,`temporizador`,`Es Hoy`)
 
-// msj whatsapp
-function mensaje () {
-    let asistire = document.getElementById("asistire").value;
-    let noAsistire = document.getElementById("asistire");
-    let ComidaVeganaSi = document.getElementById("ComidaVeganaSi");
-    let comidaCeliaca = document.getElementById("comidaCeliaca");
-    let ninguno = document.getElementById("ninguno").value;
-    let telWhatsapp = document.getElementById("Whatsapp1");
+// maquina de escibir 
 
+let writing = (str) => {
+    let arrFromStr = str.split(``)
+    let i = 0;
+    var titulo = document.getElementById('NosCasamos')
 
-        telWhatsapp.setAttribute("href",`https://wa.me/541160410242/?text=confirmo${asistire} con${ninguno}alabodadeluchoyluciana`)
-
-
+    let printStr = setInterval(function(){
+        titulo.innerHTML += arrFromStr[i];
+        i++
+        if(i === arrFromStr.length){
+            clearInterval(printStr)
+        }
+    },200)
 }
 
-mensaje()
+writing("Nos Casamos")
+let writing2 = (str2) => {
+    let arrFromStr2 = str2.split(``)
+    let i = 0;
+    var titulo2 = document.getElementById('NosCasamosNombres')
+    let printStr = setInterval(function(){
+        titulo2.innerHTML += arrFromStr2[i]
+        i++
+        if(i===arrFromStr2.length){
+            clearInterval(printStr)
+        }
+    },200)
+}
 
+writing2("Luis & Luciana")
+
+
+// mensaje Whatsap
+
+let btnwts1 = document.getElementById("whatsap1")
+
+btnwts1.addEventListener(`click`,enviarMsj)
+
+let btnwts2 = document.getElementById("whatsap2")
+
+btnwts2.addEventListener("click",enviarMsj)
+
+function enviarMsj () { 
+    let inputName = document.getElementById("nombreMsj").value;
+    let inputAsistencia = document.getElementById("asistencia").value;
+    let inputPedidos = document.getElementById("pedidosEspeciales").value
+    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: %0A"+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento."+ "%0A%0A Pedidos Especiales: %0A" + inputPedidos+"." +" %0A%0A Gracias y Felicidades a los novios "
+    window.open(url)
+}
 
