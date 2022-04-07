@@ -126,22 +126,41 @@ body{
 }
 
 .donde__Card__imagen{
-    width: 50%;
+    width: 48%;
+    margin: auto;
 }
 .donde__Card__imagen img {
     width: 100%;
     height: 400px;
     border-radius: 3px;
 }
+.donde__Card__titulo{
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    font-size: 4.5rem;
+    font-family: 'Boulevard', cursive;
+    text-shadow: 5px 1px #333;
+}
 .donde__Card__texto{
+    height: 350px;
     font-size: 1.5rem;
     width: 50%;
     text-align: center;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .card__button{
     margin-top: 1rem;
-    background-color: #40c94a;
+    color: wheat;
+    background-color: #59705a;
+}
+.card__button:hover{
+    background-color: #515652;
+
 }
 .card__button:hover{
     background-color: #009717;
@@ -171,19 +190,63 @@ iframe{
         color: #333;
     ;
 }
+.carousel{
+    width: 70%;
+    margin: auto;
+}
 .imagenCarrusel{
     height: 450px;
+    border-radius: 5px;
 }
-input, select{
+.confirmacion{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    height: 300px;
+    justify-content: space-evenly;
+}
+input, select{  
+    background-color: #e9e9df;
     outline: none;
     border: none;
     border-bottom: 2px solid #333;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    font-weight: 600;
+}
+.buttonsWhatsap{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 35%;
+}
+.buttonsWhatsap__contenido{
+    padding: 10px;
+    width: 25%;
+    background-color: dimgray;
+}
+.buttonsWhatsap__contenido:hover{
+    background-color: darkslategray;
+}
+
+.insta{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .tag{
+    color: #333;
     text-decoration: none;
-
+    font-size: 2.5rem;
+}
+.tag:hover{
+    color: #60a794e6;
 }
 /* baner final  */
 
@@ -215,11 +278,11 @@ input, select{
         height: 80%;
     }
     .donde__Card{
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin: 1rem 0;   
     }
     .rev{
-        flex-direction: column-reverse;
+        flex-direction: column
     }
     .donde__Card__imagen{
         width: 95%;
@@ -236,18 +299,27 @@ input, select{
     .card__button{
         margin-bottom: 1rem;
     }
+    .carousel{
+        width: 95%;
+    }
     .confirmacion{
         overflow: hidden;
     }
     form{
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 
     form > input, select , #whatsap1 , #whatsap2{
         margin: 5px 0;
+    }
+    .buttonsWhatsap{
+        width: 90%;
+    }
+    .buttonsWhatsap__contenido{
+        padding: 5px;
     }
 }
 
