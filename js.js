@@ -1,3 +1,5 @@
+//temporizador
+
 const getRemainTime = (deadline) => {
     let now = new Date(),
 
@@ -54,25 +56,25 @@ let writing = (str) => {
         i++
         if(i === arrFromStr.length){
             clearInterval(printStr)
+            let writing2 = (str2) => {
+                let arrFromStr2 = str2.split(``)
+                let i = 0;
+                var titulo2 = document.getElementById('NosCasamosNombres')
+                let printStr = setInterval(function(){
+                    titulo2.innerHTML += arrFromStr2[i]
+                    i++
+                    if(i===arrFromStr2.length){
+                        clearInterval(printStr)
+                    }
+                },150)
+            }
+            writing2("Luciana & Luis")
         }
-    },200)
+    },150)
 }
 
-writing("Nos Casamos")
-let writing2 = (str2) => {
-    let arrFromStr2 = str2.split(``)
-    let i = 0;
-    var titulo2 = document.getElementById('NosCasamosNombres')
-    let printStr = setInterval(function(){
-        titulo2.innerHTML += arrFromStr2[i]
-        i++
-        if(i===arrFromStr2.length){
-            clearInterval(printStr)
-        }
-    },200)
-}
+writing("Nos Casamos ")
 
-writing2("Luis & Luciana")
 
 
 // mensaje Whatsap
@@ -89,7 +91,7 @@ function enviarMsj () {
     let inputName = document.getElementById("nombreMsj").value;
     let inputAsistencia = document.getElementById("asistencia").value;
     let inputPedidos = document.getElementById("pedidosEspeciales").value
-    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: %0A"+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento."+ "%0A%0A Pedidos Especiales: %0A" + inputPedidos+"." +" %0A%0A Gracias y Felicidades a los novios "
+    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: %0A"+ inputName + ", %0A Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: %0A" + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
     window.open(url)
 }
 

@@ -3,11 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* font */
+
+@font-face {
+    font-family: 'Ecuyer';
+    src: url('font/EcuyerR0902.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Boulevard';
+    src: url('font/Boulevard.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 p{
     margin-bottom: 0;
 }
 
-
+body{
+    background-color: #e9e9df;
+}
 /* baneer */
 
 .banner{
@@ -16,7 +34,7 @@ p{
     background-size: 80% 80%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center ;
 
 }
 .encabezado{
@@ -34,20 +52,21 @@ p{
 }
 
 .titulos{
-    font-size: 5rem;
-    font-family: 'Beau Rivage', cursive;
+    font-size: 4.5rem;
+    font-family: 'Boulevard', cursive;
     letter-spacing: 3px;
     text-align: center;
-    color: #f0f0f0;
+    color: #333;
 }
 #NosCasamos , #NosCasamosNombres{
     color: #636363;
 }
 .fondoTitulos{
-    background-color: #33691e;
+    background-color: #f0f0f0;
+    
 }
 .contenidoFondo{
-    background-color: #ffffbb;
+    background-color: #e9e9df;
 }
 
 /* Cuando */
@@ -62,6 +81,8 @@ p{
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        background-attachment: fixed;
+        background-position: center ;
 }
 .cuando:before {
 	content:'';
@@ -85,6 +106,9 @@ p{
 
 .cuando__contenido__texto{
     font-size: 2rem;
+}
+#temporizador{
+    font-family: 'Ecuyer';
 }
 
 
@@ -144,14 +168,23 @@ iframe{
 }
 .dressCode__texto{
     font-size: 3rem;
-        color: #636363;
+        color: #333;
     ;
 }
 .imagenCarrusel{
     height: 450px;
 }
+input, select{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+}
+.tag{
+    text-decoration: none;
 
-
+}
 /* baner final  */
 
 .banner__final{
@@ -168,17 +201,18 @@ iframe{
 
 @media screen and (max-width: 425px){
     .titulos{
-        font-size: 3rem;
+        font-size: 2.7rem;
         letter-spacing: 1px;
     }
     .Banner__contenido__texto{
         font-size: 1rem;
     }
     .cuando{
-        height: 95vh;
+        height: 90vh;
     }
     .cuando__contenido__texto{
         font-size: 1.2rem;
+        height: 80%;
     }
     .donde__Card{
         flex-direction: column;
@@ -197,9 +231,23 @@ iframe{
     .donde__Card__texto{
         font-size: 1rem;
         width: 100%;
+        margin-top: 10px;
     }
     .card__button{
         margin-bottom: 1rem;
+    }
+    .confirmacion{
+        overflow: hidden;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    form > input, select , #whatsap1 , #whatsap2{
+        margin: 5px 0;
     }
 }
 
