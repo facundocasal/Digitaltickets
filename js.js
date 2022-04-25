@@ -30,7 +30,7 @@ const countdown = (deadline , elem , finalMessage) => {
         
         let t = getRemainTime(deadline);
 
-        el.innerHTML = `${t.remainDays} Dias  ${t.remainHours} Hs  ${t.remainMinutos} M  ${t.remainseconds} S`
+        el.innerHTML = `${t.remainDays}  Dias  ${t.remainHours} Hs  ${t.remainMinutos} M  ${t.remainseconds} S`
         
         if (t.remainTime <= 1){
             clearInterval(timeUpdate)
@@ -42,14 +42,14 @@ const countdown = (deadline , elem , finalMessage) => {
 
 
 
-countdown(`Oct 22 2022 00:00:00 GMT-0300` ,`temporizador`,`Es Hoy`)
+countdown(`Oct 07 2022 00:00:00 GMT-0300` ,`temporizador`,`Es Hoy`)
 
 // maquina de escibir 
 
 let writing = (str) => {
     let arrFromStr = str.split(``)
     let i = 0;
-    var titulo = document.getElementById('NosCasamos')
+    var titulo = document.getElementById('NosCasamosNombres')
 
     let printStr = setInterval(function(){
         titulo.innerHTML += arrFromStr[i];
@@ -59,21 +59,21 @@ let writing = (str) => {
             let writing2 = (str2) => {
                 let arrFromStr2 = str2.split(``)
                 let i = 0;
-                var titulo2 = document.getElementById('NosCasamosNombres')
+                var titulo2 = document.getElementById('NosCasamos')
                 let printStr = setInterval(function(){
                     titulo2.innerHTML += arrFromStr2[i]
                     i++
                     if(i===arrFromStr2.length){
                         clearInterval(printStr)
                     }
-                },150)
+                },100)
             }
-            writing2("Luciana & Luis")
+            writing2("¡Nos casamos!")
         }
     },150)
 }
 
-writing("Nos Casamos ")
+writing("Luciana & Luis")
 
 
 
@@ -91,7 +91,7 @@ function enviarMsj () {
     let inputName = document.getElementById("nombreMsj").value;
     let inputAsistencia = document.getElementById("asistencia").value;
     let inputPedidos = document.getElementById("pedidosEspeciales").value
-    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: %0A"+ inputName + ", %0A Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: %0A" + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
+    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
     window.open(url)
 }
 
