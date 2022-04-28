@@ -12,12 +12,12 @@
     font-style: normal;
     font-weight: normal;
 }
-@font-face {
+/* @font-face {
     font-family: 'Boulevard';
     src: url('font/Boulevard.otf') format('truetype');
     font-style: normal;
     font-weight: normal;
-}
+} */
 
 p{
     margin-bottom: 0;
@@ -48,18 +48,18 @@ body{
 
 .flecha{
     font-size: 2rem;
-    color: #333;
+    color: #FFF;
 }
 
 .titulos{
     font-size: 4.5rem;  
-    font-family: 'Boulevard', cursive;
+    font-family: 'Ms Madi', cursive;
     letter-spacing: 3px;
     text-align: center;
     color: #c4a246;
 }
-#NosCasamos , #NosCasamosNombres{
-    color: #636363;
+.titulos__cuando{
+    color: #FFF;
 }
 .fondoTitulos{
     background-color: #f0f0f0;
@@ -73,7 +73,6 @@ body{
 
 
 .cuando{
-        padding: 0.2rem;
         height: 100vh;
         text-align: center;
         background-position: center center;
@@ -94,6 +93,7 @@ body{
 	background-color: rgba(0,0,0,0.6);
 }
 .cuando__contenido{
+    padding: 1rem;
     position: relative;
     color: #f0f0f0;
     height: 100%;
@@ -106,11 +106,18 @@ body{
 
 .cuando__contenido__texto{
     font-size: 2rem;
-    font-family: 'Montserrat';
+    font-family: 'Pacifico', cursive;
 }
 #temporizador{
     font-family: 'Ecuyer';
 }
+.temporizador{
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 9px 3px;
+}
+
 
 
 /* frase */
@@ -141,7 +148,7 @@ body{
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     font-size: 4.5rem;
-    font-family: 'Boulevard', cursive;
+    font-family: 'Ms Madi', cursive;
     /* text-shadow:  5px 10px 10px #333; */
 }
 .donde__card__texto{
@@ -281,11 +288,10 @@ input, select{
         font-size: 1rem;
     }
     .cuando{
-        height: 80vh;
+        height: 90vh;
     }
     .cuando__contenido__texto{
         font-size: 1.2rem;
-        height: 80%;
     }
     .donde__card{
         flex-direction: column-reverse;
