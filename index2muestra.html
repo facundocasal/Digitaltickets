@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamiento Luciana & Luis</title>
+   
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&display=swap" rel="stylesheet">
@@ -54,7 +55,7 @@
             </div>
             <div>
                 <p class="cuando__contenido__texto ">El Dia Sabado 7 De Octubre Del 2022</p>
-                <div class="d-flex text-center w-50 m-auto justify-content-evenly align-items-center">
+                <div class="faltan  d-flex text-center m-auto justify-content-evenly align-items-center">
                     <p class="titulos titulos__cuando">Faltan</p>
                     <!-- <p class="titulos" style="color: #f0f0f0;"><strong>Faltan</strong></p> -->
                     <div class="temporizador">
@@ -74,33 +75,28 @@
     <!-- fin Cuando -->
 
     <!-- donde -->
-    <div id="donde">
-        <div>
-            <h1 class="titulos fondoTitulos mb-0 mt-2 shadow">Dónde</h1>
-        </div>
+    <div id="donde" class="donde">
         <div class="donde__card contenidoFondo p-2 mt-0">
-            <div class="donde__card__imagen" data-aos="zoom-in">
-                <img src="http://nexofm.com.ar/download/multimedia.grande.864df7d67d47cc4f.64346661626362333363613734313838373138636434353933613763363463305f6772616e64652e6a7067.jpg"
-                    alt="">
-            </div>
             <div class="donde__card__texto  mt-1">
-
-                <h3 class=" donde__card__titulo" style="color: #947a33;">Ceremonia </h3>
-
+                <div>
+                    <h3 class=" donde__card__titulo" style="color: #947a33;">Ceremonia </h3>
+                </div>    
                 <div class="p-2">
                     <p>Te invitamos a nuestra ceremonia el día 7 de Octubre a las 16:45 hs. en la <strong>Iglesia
-                            Nuestra Señora del Carmen</strong>, Villa Allende, Córdoba. <br> Te esperamos!</p>
+                            Nuestra Señora del Carmen</strong>, Villa Allende, Córdoba.
                     <!-- <p> <strong>Parroquia:</strong> Iglesia Nuestra Señora del Carmen</p>
                     <p> <strong>Horario:</strong> 18:00 Hs</p>
                     <p class=""><strong>Direccion:</strong> Av. Del Carmen 200, Villa Allende, Córdoba <i
                             class="bi bi-caret-down-fill"></i></p> -->
+                </div>
+                <div>
                     <button type="button" class="btn fw-bold card__button shadow" data-bs-toggle="modal"
-                        data-bs-target="#religiosa">
-                        Cómo llegar
-                    </button>
-                    <div class="card__img">
-                        <img src="imagenes/weding.svg" alt="">
-                    </div>
+                    data-bs-target="#religiosa">
+                    Cómo llegar
+                </button>
+                </div>
+                <div class="card__img">
+                    <img src="imagenes/weding.svg" alt="">
                 </div>
                 <div class="modal fade" id="religiosa" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -131,27 +127,29 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="donde__card  rev p-2 contenidoFondo">
             <div class="donde__card__texto">
-
-                <h3 class=" donde__card__titulo" style="color:#947a33">Fiesta </h3>
+                <div>
+                    <h3 class=" donde__card__titulo" style="color:#947a33">Fiesta </h3>
+                </div>
                 <div class="p-2">
                     <p>Después de la ceremonia, te esperamos para festejar a partir de las 18:00 hs. en <strong>Mansueto
-                            1912</strong>. <br>
+                            1912</strong>.
                         No olvides confirmar tu presencia al final de la invitación!</p>
                     <!-- <p> <strong>Salon:</strong> Mansueto 1912</p>
                     <p><strong>Horario:</strong> 20:00 Hs</p>
                     <p class=""><strong>Direccion:</strong>  Aguaribay S/n, X 5149 Saldan, Córdoba <i
                             class="bi bi-caret-down-fill"></i></p> -->
+                </div>
+                <div>
                     <button type="button" class="btn shadow fw-bold card__button " data-bs-toggle="modal"
-                        data-bs-target="#fiesta">
-                        Cómo llegar
-                    </button>
-                    <div class="card__img">
-                        <img src="imagenes/copas.svg" alt="">
-                    </div>
+                    data-bs-target="#fiesta">
+                    Cómo llegar
+                </button>
+                </div>
+                <div class="card__img">
+                    <img src="imagenes/copas.svg" alt="">
                 </div>
                 <div class="modal fade" id="fiesta" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -184,9 +182,9 @@
                     </div>
                 </div>
             </div>
-            <div class="donde__card__imagen" data-aos="zoom-in">
+            <!-- <div class="donde__card__imagen" data-aos="zoom-in">
                 <img src="http://viroeventos.com/wp-content/uploads/2017/07/IMG_7393-e1603293338451-300x300.jpg" alt="">
-            </div>
+            </div> -->
         </div>
     </div>
     <!--fin de donde  -->
@@ -197,6 +195,7 @@
         <div class="">
             <h1 class="titulos shadow fondoTitulos mt-2 mb-0">Dress Code</h1>
         </div>
+        
         <div class="dressCode contenidoFondo p-2">
             <div class="dressCode__imgen">
                 <img class="img-fluid" src="imagenes/dressCode.png" alt="dressCode">
@@ -304,9 +303,9 @@
         <div class="text-center confirmacion__contenido  contenidoFondo p-2">
             <form action="">
                 <p>Confirmanos tu asistencia en el siguiente formulario:</p>
-                <input class="" type="text" id="nombreMsj" placeholder="nombre">
+                <input class="" type="text" id="nombreMsj" placeholder="Nombre/s">
                 <select class="" name="asistencia" id="asistencia">
-                    <option value="">confirmar asistencia</option>
+                    <option value="">Confirmar Asistencia</option>
                     <option>Asistiré</option>
                     <option>No Asistiré </option>
                 </select>
@@ -339,6 +338,9 @@
         <a data-aos="flip-left" class="tag fw-bold" href="https://www.instagram.com/explore/tags/bodaluylucho/"><i
                 class="fa-solid fa-hashtag"></i>bodaluylucho <i class="fa-brands fa-instagram"></i></a>
     </div>
+    <!-- <div>
+        <button onclick="generatePDF()">Click aquí</button>
+    </div> -->
 
 
 
@@ -377,8 +379,6 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="js2muestra.js"></script>
-
-
 
 </body>
 

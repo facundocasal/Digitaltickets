@@ -65,10 +65,10 @@ body{
     background-color: #f0f0f0;
     
 }
-.contenidoFondo{
-    background-color: #e9e9df;
+.faltan{
+    margin-top: 1rem;
+    width: 50%;
 }
-
 /* Cuando */
 
 
@@ -112,7 +112,7 @@ body{
     font-family: 'Ecuyer';
 }
 .temporizador{
-    background-color: #333;
+    background-color: #333; 
     padding: 1.5rem;
     border-radius: 100%;
     box-shadow: inset 1px 1px 9px 3px;
@@ -124,24 +124,29 @@ body{
 
 /* Donde */
 
+.donde{
+    display: flex;
+    height: auto;
+    padding: 2rem;
+}
 
-.donde__card {
+/* .donde__card {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-family: 'Sofia', cursive;
-}
+} */
 
-.donde__card__imagen{
+/* .donde__card__imagen{
     width: 48%;
     margin: auto;
-}
-.donde__card__imagen img {
+} */
+/* .donde__card__imagen img {
     width: 100%;
     height: 400px;
     border-radius: 3px;
-}
+} */
 .donde__card__titulo{
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
@@ -149,22 +154,19 @@ body{
     transform-origin: 50% 50%;
     font-size: 4.5rem;
     font-family: 'Ms Madi', cursive;
-    /* text-shadow:  5px 10px 10px #333; */
 }
 .donde__card__texto{
-    height: 350px;
-    font-size: 1.5rem;
-    width: 50%;
+    margin:auto;
+    height: 500px;
     text-align: center;
-    align-self: center;
+    font-size: 1.5rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .card__button{
     margin-top: 1rem;
-    /* color: wheat;
-    background-color: #59705a; */
     background-color: #c4a246;
     color: #333;
     font-family: 'Montserrat';
@@ -176,7 +178,7 @@ body{
 }
 .card__img{
     width: 75px;
-    margin: 0.7rem auto;
+    margin: 1rem auto;
 }
 
 iframe{
@@ -293,24 +295,28 @@ input, select{
     .cuando__contenido__texto{
         font-size: 1.2rem;
     }
+    .faltan{
+        width: 100%;
+    }
+    .donde{
+        flex-direction: column;
+    }
     .donde__card{
-        flex-direction: column-reverse;
-        margin: 1rem 0;   
+        flex-direction: column-reverse; 
     }
-    .rev{
+    /* .rev{
         flex-direction: column
-    }
-    .donde__card__imagen{
+    } */
+    /* .donde__card__imagen{
         width: 95%;
         margin: auto;
-    }
-    .donde__card__imagen img{
+    } */
+    /* .donde__card__imagen img{
         height: 350px;
-    }
+    } */
     .donde__card__texto{
         font-size: 1rem;
         width: 100%;
-        margin-top: 10px;
     }
     .card__button{
         margin-bottom: 1rem;
