@@ -76,7 +76,7 @@ p{
 
 
 .cuando{
-        padding: 0.2rem;
+        padding: 1.5rem;
         height: 100vh;
         text-align: center;
         background-position: center center;
@@ -289,7 +289,8 @@ background-color: wheat;
         font-size: 1rem;
     }
     .cuando{
-        height: 80vh;
+        height: 85vh;
+        padding: 1rem;
     }
     .cuando__contenido__texto{
         font-size: 1.2rem;
@@ -297,7 +298,6 @@ background-color: wheat;
     }
     .donde__card{
         flex-direction: column-reverse;
-        margin: 1rem 0;   
     }
     .rev{
         flex-direction: column

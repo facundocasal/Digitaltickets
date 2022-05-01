@@ -71,16 +71,10 @@ let writing = (str) => {
                     }
 
                 },100)
-                setTimeout(() => {
-                    var texto1 = document.getElementById('banner__texto1')
-                    var texto2 = document.getElementById('banner__texto2')
-                    texto1.innerText = "Y queremos que seas parte de"
-                    texto2.innerText = "este momento tan especial"  
-                }, 1600);
             }
             writing2("¡Nos casamos!")
         }
-    },150)
+    },120)
 }
 
 writing("Luciana & Luis")

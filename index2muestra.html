@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamiento Luciana & Luis</title>
-   
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&display=swap" rel="stylesheet">
@@ -47,15 +47,15 @@
         <div class="cuando__contenido ">
             <!-- <div>
                 <p class="titulos" style="color: #f0f0f0;"><strong>Cuándo</strong></p>
-                <p class="cuando__contenido__texto "> Sabado 7 De Octubre Del 2022</p>
+                <p class="cuando__contenido__texto "> Viernes 7 De Octubre Del 2022</p>
             </div> -->
             <div>
                 <h1 class="titulos__cuando titulos" id="NosCasamosNombres" ></h1>
                 <h1 class="titulos__cuando titulos" id="NosCasamos" ></h1>
             </div>
             <div>
-                <p class="cuando__contenido__texto ">El Dia Sabado 7 De Octubre Del 2022</p>
-                <div class="faltan  d-flex text-center m-auto justify-content-evenly align-items-center">
+                <p class="cuando__contenido__texto ">El Dia Viernes 7 De Octubre Del 2022</p>
+                <div class="faltan mt-2  d-flex text-center m-auto justify-content-evenly align-items-center">
                     <p class="titulos titulos__cuando">Faltan</p>
                     <!-- <p class="titulos" style="color: #f0f0f0;"><strong>Faltan</strong></p> -->
                     <div class="temporizador">
@@ -93,7 +93,16 @@
                     <button type="button" class="btn fw-bold card__button shadow" data-bs-toggle="modal"
                     data-bs-target="#religiosa">
                     Cómo llegar
-                </button>
+                    </button>
+                    <div title="Add to Calendar" class="addeventatc"  style="background-color: #c4a246;color: #333;font-family: 'Montserrat';border-radius: 15px 15px 15px 15px;">
+                        Agendar Fecha
+                        <span class="start">07/10/2022 04:45 PM</span>
+                        <span class="end">07/10/2022 05:45 PM</span>
+                        <span class="timezone">America/Los_Angeles</span>
+                        <span class="title">Casamiento Luciana & Luis</span>
+                        <span class="location"> Av. Del Carmen 200, Villa
+                            Allende, Córdoba</span>
+                    </div>
                 </div>
                 <div class="card__img">
                     <img src="imagenes/weding.svg" alt="">
@@ -146,7 +155,16 @@
                     <button type="button" class="btn shadow fw-bold card__button " data-bs-toggle="modal"
                     data-bs-target="#fiesta">
                     Cómo llegar
-                </button>
+                    </button>
+                    <div title="Add to Calendar" class="addeventatc"  style="background-color: #c4a246;color: #333;font-family: 'Montserrat';border-radius: 15px 15px 15px 15px;">
+                        Agendar Fecha
+                        <span class="start">10/07/2022 06:00 PM</span>
+                        <span class="end">07/10/2022 03:00 AM</span>
+                        <span class="timezone">America/Los_Angeles</span>
+                        <span class="title">Casamiento Luciana & Luis</span>
+                        <span class="location">Aguaribay S/n, X 5149 Saldan,
+                            Córdoba</span>
+                    </div>
                 </div>
                 <div class="card__img">
                     <img src="imagenes/copas.svg" alt="">
@@ -305,13 +323,13 @@
                 <p>Confirmanos tu asistencia en el siguiente formulario:</p>
                 <input class="" type="text" id="nombreMsj" placeholder="Nombre/s">
                 <select class="" name="asistencia" id="asistencia">
-                    <option value="">Confirmar Asistencia</option>
+                    <option hidden selected value="">Confirmar Asistencia</option>
                     <option>Asistiré</option>
                     <option>No Asistiré </option>
                 </select>
                 <p class="fw-bold">Pedidos Especiales </p>
-                <select class="" name="pedidosEspeciales " id="pedidosEspeciales">
-                    <option value="Sin restricción"> Pedidos Especiales</option>
+                <select class="" name="pedidosEspeciales " id="pedidosEspeciales" placeholder="Pedidos Especiales">
+                    <option hidden selected value="Sin restricción"> Pedidos Especiales</option>
                     <option>Sin restricción</option>
                     <option>Menu Vegano</option>
                     <option>Menu Celíaco</option>

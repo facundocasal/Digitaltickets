@@ -93,7 +93,14 @@ function enviarMsj () {
     let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
     window.open(url)
 }
+function miFunc() {
+    alert('Se ha dado clic al botón!');
+}
 });
+
+function miFunc() {
+    alert('Se ha dado clic al botón!');
+}
 
 // let btnpdf = document.getElementById("btnCrearPdf")
 
