@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamiento Luciana & Luis</title>
     <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&display=swap" rel="stylesheet">
@@ -54,14 +57,14 @@
                 <h1 class="titulos__cuando titulos" id="NosCasamos" ></h1>
             </div>
             <div>
-                <p class="cuando__contenido__texto ">El Dia Viernes 7 De Octubre Del 2022</p>
+                <p class="cuando__contenido__texto ">Viernes 7 De Octubre Del 2022</p>
                 <div class="faltan mt-2  d-flex text-center m-auto justify-content-evenly align-items-center">
                     <p class="titulos titulos__cuando">Faltan</p>
                     <!-- <p class="titulos" style="color: #f0f0f0;"><strong>Faltan</strong></p> -->
                     <div class="temporizador">
                         <p class="cuando__contenido__texto " id="temporizador"></p>
                     </div>
-                    <p class="titulos titulos__cuando p-2">Dias.</p>
+                    <p class="titulos titulos__cuando p-2">Días.</p>
                 </div>
                 <div class="mt-3 w-25 m-auto">
                     <a href="#donde"><i class="fa-solid fa-angle-down fa-bounce flecha"></i></a>
@@ -86,7 +89,7 @@
                             Nuestra Señora del Carmen</strong>, Villa Allende, Córdoba.
                     <!-- <p> <strong>Parroquia:</strong> Iglesia Nuestra Señora del Carmen</p>
                     <p> <strong>Horario:</strong> 18:00 Hs</p>
-                    <p class=""><strong>Direccion:</strong> Av. Del Carmen 200, Villa Allende, Córdoba <i
+                    <p class=""><strong>Dirección:</strong> Av. Del Carmen 200, Villa Allende, Córdoba <i
                             class="bi bi-caret-down-fill"></i></p> -->
                 </div>
                 <div>
@@ -94,7 +97,7 @@
                     data-bs-target="#religiosa">
                     Cómo llegar
                     </button>
-                    <div title="Add to Calendar" class="addeventatc"  style="background-color: #c4a246;color: #333;font-family: 'Montserrat';border-radius: 15px 15px 15px 15px;">
+                    <div title="Add to Calendar" class="addeventatc"  style="background-color: #c4a246;color: #333;font-family: 'Montserrat';border-radius: 10px 10px 40px 40px;">
                         Agendar Fecha
                         <span class="start">07/10/2022 04:45 PM</span>
                         <span class="end">07/10/2022 05:45 PM</span>
@@ -107,7 +110,7 @@
                 <div class="card__img">
                     <img src="imagenes/weding.svg" alt="">
                 </div>
-                <div class="modal fade" id="religiosa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" style="z-index: 109999;" id="religiosa" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content ">
@@ -124,7 +127,7 @@
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <div class="textoModal">
                                     <p><strong>Iglesia Nuestra Señora del Carmen</strong></p>
-                                    <p class="text-center"><strong>Direccion:</strong> Av. Del Carmen 200, Villa
+                                    <p class="text-center"><strong>Dirección:</strong> Av. Del Carmen 200, Villa
                                         Allende, Córdoba <i class="fa-solid fa-location-dot"></i></p>
                                 </div>
                             </div>
@@ -148,7 +151,7 @@
                         No olvides confirmar tu presencia al final de la invitación!</p>
                     <!-- <p> <strong>Salon:</strong> Mansueto 1912</p>
                     <p><strong>Horario:</strong> 20:00 Hs</p>
-                    <p class=""><strong>Direccion:</strong>  Aguaribay S/n, X 5149 Saldan, Córdoba <i
+                    <p class=""><strong>Dirección:</strong>  Aguaribay S/n, X 5149 Saldan, Córdoba <i
                             class="bi bi-caret-down-fill"></i></p> -->
                 </div>
                 <div>
@@ -156,7 +159,7 @@
                     data-bs-target="#fiesta">
                     Cómo llegar
                     </button>
-                    <div title="Add to Calendar" class="addeventatc"  style="background-color: #c4a246;color: #333;font-family: 'Montserrat';border-radius: 15px 15px 15px 15px;">
+                    <div title="Add to Calendar" class="addeventatc"  style="background-color: #c4a246;color: #333;font-family: 'Montserrat';border-radius: 10px 10px 40px 40px;">
                         Agendar Fecha
                         <span class="start">10/07/2022 06:00 PM</span>
                         <span class="end">07/10/2022 03:00 AM</span>
@@ -169,7 +172,7 @@
                 <div class="card__img">
                     <img src="imagenes/copas.svg" alt="">
                 </div>
-                <div class="modal fade" id="fiesta" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" style="z-index: 109999;" id="fiesta" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -186,7 +189,7 @@
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <div class="textoModal">
                                     <p><strong>Salon:</strong> Mansueto 1912</p>
-                                    <p class="text-center"><strong>Direccion:</strong> Aguaribay S/n, X 5149 Saldan,
+                                    <p class="text-center"><strong>Dirección:</strong> Aguaribay S/n, X 5149 Saldan,
                                         Córdoba <i class="fa-solid fa-location-dot"></i></p>
                                 </div>
                             </div>
@@ -260,8 +263,7 @@
         <h1 class="fst-italic text-center shadow titulos fondoTitulos mb-0 mt-2"> Mesa de regalos <i
                 class="fa-solid fa-gift fs-1"></i> </h1>
         <div class="mesaRegalos">
-            <p class="text-center fw-bold mt-2">Si deseas hacernos un regalo podés colaborar con nuestra Luna de Miel.
-                Muchas gracias!</p>
+            <p class="text-center fw-bold mt-2">Si deseas hacernos un regalo podés colaborar con nuestra Luna de Miel. ¡Muchas gracias!</p>
             <button type="button" class="btn fw-bold card__button shadow" data-bs-toggle="modal"
                 data-bs-target="#mesaRegalos">
                 Ver Datos
@@ -320,7 +322,7 @@
         <h3 class=" fst-italic shadow titulos fondoTitulos mb-0 mt-2">Confirmar Asistencia</h3>
         <div class="text-center confirmacion__contenido  contenidoFondo p-2">
             <form action="">
-                <p>Confirmanos tu asistencia en el siguiente formulario:</p>
+                <p>Confírmanos tu asistencia en el siguiente formulario:</p>
                 <input class="" type="text" id="nombreMsj" placeholder="Nombre/s">
                 <select class="" name="asistencia" id="asistencia">
                     <option hidden selected value="">Confirmar Asistencia</option>
@@ -352,7 +354,7 @@
 
 
     <div class="fondoTitulos p-3 text-center mt-3 insta fw-bold">
-        <p>Usá nuestro hashtag en Instagram para etiquetarnos en tus fotos y videos</p>
+        <p>Usa nuestro hashtag en Instagram para etiquetarnos en tus fotos y videos</p>
         <a data-aos="flip-left" class="tag fw-bold" href="https://www.instagram.com/explore/tags/bodaluylucho/"><i
                 class="fa-solid fa-hashtag"></i>bodaluylucho <i class="fa-brands fa-instagram"></i></a>
     </div>

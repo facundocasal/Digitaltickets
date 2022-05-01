@@ -85,17 +85,25 @@ writing("Luciana & Luis")
 
 let btnwts1 = document.getElementById("whatsap1")
 
-btnwts1.addEventListener(`click`,enviarMsj)
+btnwts1.addEventListener(`click`,enviarMsjNovia)
 
 let btnwts2 = document.getElementById("whatsap2")
 
-btnwts2.addEventListener("click",enviarMsj)
+btnwts2.addEventListener("click",enviarMsjNovio)
 
-function enviarMsj () { 
+function enviarMsjNovia () { 
     let inputName = document.getElementById("nombreMsj").value;
     let inputAsistencia = document.getElementById("asistencia").value;
     let inputPedidos = document.getElementById("pedidosEspeciales").value
-    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
+    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias por la invitación y Felicidades a los novios 🎉 "
+    window.open(url)
+}
+
+function enviarMsjNovio () { 
+    let inputName = document.getElementById("nombreMsj").value;
+    let inputAsistencia = document.getElementById("asistencia").value;
+    let inputPedidos = document.getElementById("pedidosEspeciales").value
+    let url = "https://api.whatsapp.com/send/?phone=541159918246&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias por la invitación y Felicidades a los novios 🎉 "
     window.open(url)
 }
 });
