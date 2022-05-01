@@ -23,19 +23,16 @@ p{
     margin-bottom: 0;
 }
 
-body{
-    background-color: #e9e9df;
-}
+
 /* baneer */
 
 .banner{
     height: 100vh;
-    background-image: url('imagenes/fondo2.png');
+    background-image: url('imagenes/fondo.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center ;
     margin-bottom: 0.5rem;
-
 }
 .encabezado{
         display: flex;
@@ -45,10 +42,15 @@ body{
         justify-content: space-between;
 }
 
+.Banner__contenido__texto{
+    font-family: 'Sofia', cursive;
+    font-size: x-large;
+}
 
 .flecha{
     font-size: 2rem;
     color: #333;
+    margin-top: 2.5rem;
 }
 
 .titulos{
@@ -60,10 +62,11 @@ body{
 }
 #NosCasamos , #NosCasamosNombres{
     color: #636363;
+    transform: rotate(-7deg);
+    transform-origin: 10% 50%;
 }
 .fondoTitulos{
-    background-color: #f0f0f0;
-    
+    background-color: #f0f0f0;  
 }
 .contenidoFondo{
     background-color: #e9e9df;
@@ -161,6 +164,7 @@ body{
     background-color: #c4a246;
     color: #333;
     font-family: 'Montserrat';
+    border-radius: 100px 15px 100px 15px;
 }
 .card__button:hover{
     margin-top: 1rem;
@@ -189,10 +193,10 @@ iframe{
     align-items: center;
 }
 .dressCode__imgen img {
-    width: 250px;
+    width: 150px;
 }
 .dressCode__texto{
-    font-size: 3rem;
+    font-size: 2rem;
         color: #333;
     ;
 }
@@ -236,11 +240,15 @@ input, select{
 }
 .buttonsWhatsap__contenido{
     padding: 10px;
-    width: 25%;
-    background-color: dimgray;
+    width: 30%;
+    color: #f0f0f0;
+    background-color:  #c4a246;
+    border-radius: 100px 15px 100px 15px;
 }
 .buttonsWhatsap__contenido:hover{
-    background-color: darkslategray;
+color: #59705a;
+background-color: wheat;
+
 }
 
 .insta{
@@ -309,6 +317,12 @@ input, select{
     .card__button{
         margin-bottom: 1rem;
     }
+    .dressCode__imgen img {
+        width: 100px;
+    }
+    .dressCode__texto{
+        font-size: 1.5rem;
+    }
     .carousel{
         width: 95%;
     }
@@ -330,10 +344,12 @@ input, select{
         margin: 5px 0;
     }
     .buttonsWhatsap{
-        width: 90%;
+        width: 100%;
     }
+
     .buttonsWhatsap__contenido{
         padding: 5px;
+        width: 30%;
     }
     .banner__final__titulo{
         margin-top: 2rem;

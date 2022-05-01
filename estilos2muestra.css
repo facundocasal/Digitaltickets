@@ -30,7 +30,7 @@ body{
 
 .banner{
     height: 100vh;
-    background-image: url('imagenes/fondo2.png');
+    background-image: url('imagenes/flower.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center ;
@@ -93,7 +93,7 @@ body{
 	background-color: rgba(0,0,0,0.6);
 }
 .cuando__contenido{
-    padding: 1rem;
+    padding: 1.2rem;
     position: relative;
     color: #f0f0f0;
     height: 100%;
@@ -198,12 +198,11 @@ iframe{
     align-items: center;
 }
 .dressCode__imgen img {
-    width: 250px;
+    width: 150px;
 }
 .dressCode__texto{
-    font-size: 3rem;
-        color: #333;
-    ;
+    font-size: 2rem;
+    color: #333;  
 }
 .carousel{
     width: 70%;
@@ -292,6 +291,9 @@ input, select{
     .cuando{
         height: 90vh;
     }
+    .cuando__contenido{
+        padding: 1.5rem;
+    }
     .cuando__contenido__texto{
         font-size: 1.2rem;
     }
@@ -320,6 +322,12 @@ input, select{
     }
     .card__button{
         margin-bottom: 1rem;
+    }
+    .dressCode__imgen img {
+        width: 100px;
+    }
+    .dressCode__texto{
+        font-size: 1.5rem;
     }
     .carousel{
         width: 95%;

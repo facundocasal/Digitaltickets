@@ -1,4 +1,5 @@
-
+window.addEventListener('load', function(event) {
+    
 //temporizador
 
 const getRemainTime = (deadline) => {
@@ -64,11 +65,11 @@ let writing = (str) => {
                     if(i===arrFromStr2.length){
                         clearInterval(printStr)
                     }
-                },100)
+                },80)
             }
             writing2("¡Nos casamos!")
         }
-    },150)
+    },100)
 }
 
 writing("Luciana & Luis")
@@ -92,6 +93,7 @@ function enviarMsj () {
     let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
     window.open(url)
 }
+});
 
 // let btnpdf = document.getElementById("btnCrearPdf")
 

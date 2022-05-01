@@ -28,16 +28,17 @@
         <div class=" text-black w-100 h-100 d-flex justify-content-around align-items-center">
             <div class="Banner__contenido " data-aos="fade-up" data-aos-duration="2000">
                 <div class="fw-bold encabezado  ">
-                    <div>
+                    <div class="mt-4">
                         <h1 id="NosCasamosNombres" class="titulos"></h1>
                     </div>
                     <div>
                         <h1 id="NosCasamos" class="titulos "></h1>
                     </div>
-                    <div>
-                        <h3 class="Banner__contenido__texto ">Y queremos que seas parte <br> de este momento tan especial</h3>
+                    <div class="contenedor__banner">
+                        <p id="banner__texto1" class="Banner__contenido__texto"></p><br> 
+                        <p id="banner__texto2" class="Banner__contenido__texto"> </p>
                     </div>
-                    <div class="mt-5">
+                    <div>
                         <a href="#cuando"><i class="fa-solid fa-angle-down fa-bounce flecha"></i></a>
                     </div>
                 </div>
@@ -67,7 +68,7 @@
     <!-- donde -->
     <div>
         <div>
-            <h1 class="titulos fondoTitulos mb-0 mt-2 shadow">Dónde</h1>
+            <h1 class="titulos fondoTitulos mb-0 mt-1 shadow">Dónde</h1>
         </div>
         <div class="donde__card contenidoFondo p-2 mt-0">
             <div class="donde__card__imagen" data-aos="zoom-in">
@@ -180,11 +181,11 @@
 
     <div>
         <div class="">
-            <h1 class="titulos shadow fondoTitulos mt-2 mb-0">Dress Code</h1>
+            <h1 class="titulos shadow fondoTitulos mt-1 mb-0">Dress Code</h1>
         </div>
         <div class="dressCode contenidoFondo p-2">
             <div class="dressCode__imgen">
-                <img class="img-fluid" src="imagenes/dressCode.png" alt="dressCode">
+                <img class="img-fluid" src="https://aitorapezteguia.com/wp-content/uploads/2020/05/004-prueba-traje-preboda-768x768.png" alt="dressCode">
             </div>
             <div class="dressCode__texto fst-italic">
                 <p>Elegante</p>
@@ -199,9 +200,9 @@
 
     <div class="" id="fotos">
         <div>
-            <h1 class=" text-center titulos  shadow fondoTitulos mb-0 mt-2">Nosotros... </h1>
+            <h1 class=" text-center titulos  shadow fondoTitulos mb-0 mt-1">Nosotros... </h1>
         </div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide overflow-hidden p-1 " data-bs-interval="2000"
+        <div id="carouselExampleSlidesOnly" class="carousel slide overflow-hidden p-1 mt-1" data-bs-interval="2000"
             data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -225,8 +226,8 @@
 
     <!-- mesa de regalos  -->
     <div class="overflow-hidden text-center " id="mesa">
-        <h1 class="fst-italic text-center shadow titulos fondoTitulos mb-0 mt-2"> Mesa de regalos  <i class="fa-solid fa-gift fs-1"></i> </h1>
-        <div class="mesaRegalos">
+        <h1 class="fst-italic text-center shadow titulos fondoTitulos mb-0 mt-1"> Mesa de regalos  <i class="fa-solid fa-gift fs-1"></i> </h1>
+        <div class="mesaRegalos contenidoFondo">
             <p class="text-center fw-bold mt-2">Si deseas hacernos un regalo podés colaborar con nuestra Luna de Miel.
                 Muchas gracias!</p>
             <button type="button" class="btn fw-bold card__button shadow" data-bs-toggle="modal" data-bs-target="#mesaRegalos">
@@ -282,7 +283,7 @@
     <!-- confirmacion de asistencia  -->
 
     <div id="confirmacion" class="confirmacion">
-        <h3 class=" fst-italic shadow titulos fondoTitulos mb-0 mt-2">Confirmar Asistencia</h3>
+        <h3 class=" fst-italic shadow titulos fondoTitulos mb-0 mt-1 ">Confirmar Asistencia</h3>
         <div class="text-center confirmacion__contenido  contenidoFondo p-2">
             <form action="">
                 <p>Confirmanos tu asistencia en el siguiente formulario:</p>
@@ -303,11 +304,11 @@
             </form>
             <div class="buttonsWhatsap">
                 <button data-aos="zoom-in" type="button" id="whatsap1"
-                    class="shadow btn text-decoration-none text-light fw-bold fst-italic buttonsWhatsap__contenido "><a>Luciana
-                        <i style="color: #00Bd2d;" class="fa-brands fa-whatsapp fw-bold"></i></a></button>
+                    class="shadow btn text-decoration-none  fw-bold buttonsWhatsap__contenido "><a>👰🏻‍♀️ Luciana
+                         <i  class="fa-brands fa-whatsapp fw-bold"></i></a></button>
                 <button data-aos="zoom-in" type="button" id="whatsap2"
-                    class="shadow btn text-decoration-none text-light fw-bold fst-italic buttonsWhatsap__contenido "><a>Luis
-                        <i style="color: #00Bd2d;" class="fa-brands fa-whatsapp fw-bold"></i></a></button>
+                    class="shadow btn text-decoration-none  fw-bold buttonsWhatsap__contenido "><a>🤵🏻 Luis
+                         <i  class="fa-brands fa-whatsapp fw-bold"></i></a></button>
             </div>
             <p class="mt-4">Te esperamos!</p>
         </div>
@@ -316,7 +317,7 @@
     <!-- fin confirmacion de asistencia  -->
 
 
-    <div class="fondoTitulos p-3 text-center mt-3 insta fw-bold">
+    <div class="fondoTitulos p-3 text-center  insta fw-bold">
         <p>Usá nuestro hashtag en Instagram para etiquetarnos en tus fotos y videos</p>
         <a data-aos="flip-left" class="tag fw-bold" href="https://www.instagram.com/explore/tags/bodaluylucho/"><i
                 class="fa-solid fa-hashtag"></i>bodaluylucho <i class="fa-brands fa-instagram"></i></a>
@@ -329,7 +330,7 @@
 
 
     <!-- banner final  -->
-    <div class="banner__final mt-2">
+    <div class="banner__final mt-1">
         <div class="bg-black bg-opacity-50 w-100 h-100 d-flex justify-content-around align-items-center">
             <div class="Banner__contenido" data-aos="fade-up" data-aos-duration="2000">
                 <div class="banner__final__titulo text-center p-3">
