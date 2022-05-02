@@ -1,6 +1,6 @@
 window.addEventListener('load', function(event) {
     Swal.fire({
-        title: 'Estas invitado al',
+        title: 'Estas invitado',
         text: 'Casamiento de Luciana & Luis',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
@@ -42,7 +42,8 @@ const countdown = (deadline , elem , finalMessage) => {
         
         let t = getRemainTime(deadline);
 
-        el.innerHTML = `<p class="cuando__contenido__texto  " id="temporizador">${t.remainDays}</p>`
+        // el.innerHTML = `<p class="cuando__contenido__texto" id="temporizador">${t.remainDays}</p>`
+        el.innerHTML = `${t.remainDays}  Dias  ${t.remainHours} Hs  ${t.remainMinutos} M  ${t.remainseconds} S`
         
         if (t.remainTime <= 1){
             clearInterval(timeUpdate)
