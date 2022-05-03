@@ -24,7 +24,9 @@ p{
 }
 
 body{
-    background-color: #e9e9df;
+    /* background-color: #e9e9df; */
+    background-color: #c7e3b4;
+
 }
 /* baneer */
 
@@ -227,6 +229,7 @@ form{
 }
 input, select{  
     background-color: #e9e9df;
+    background-color: #c7e3b4;
     outline: none;
     border: none;
     border-bottom: 2px solid #333;
@@ -242,12 +245,15 @@ input, select{
 }
 .buttonsWhatsap__contenido{
     padding: 10px;
-    width: 25%;
-    background-color: dimgray;
-    border-radius: 10px 10px 40px 40px;
+    width: 30%;
+    color: #f0f0f0;
+    background-color:  #c4a246;
+    border-radius: 100px 15px 100px 15px;
 }
 .buttonsWhatsap__contenido:hover{
-    background-color: darkslategray;
+color: #59705a;
+background-color: wheat;
+
 }
 
 .insta{
@@ -268,20 +274,18 @@ input, select{
 /* baner final  */
 
 .banner__final{
-    height: 450px;
+    height: 250px;
     overflow: hidden;
     width: 100%;
     z-index: 1;
-    background-image: url('imagenes/luylucho/img4.png');
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: cover;
+    background-color: #f0f0f0;
+    color: wheat;
 }
 
 
 @media screen and (max-width: 425px){
     .titulos{
-        font-size: 2.5rem;
+        font-size: 3rem;
         letter-spacing: 1px;
     }
     .Banner__contenido__texto{

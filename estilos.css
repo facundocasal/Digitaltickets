@@ -269,14 +269,12 @@ background-color: wheat;
 /* baner final  */
 
 .banner__final{
-    height: 450px;
+    height: 250px;
     overflow: hidden;
     width: 100%;
     z-index: 1;
-    background-image: url('imagenes/luylucho/img4.png');
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: cover;
+    background-color: #e9e9df;
+    color: wheat;
 }
 
 

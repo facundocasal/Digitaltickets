@@ -1,6 +1,6 @@
 window.addEventListener('load', function(event) {
     Swal.fire({
-        title: 'Estas invitado',
+        title: 'Estás invitadx al',
         text: 'Casamiento de Luciana & Luis',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
