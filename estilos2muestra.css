@@ -61,10 +61,10 @@ body{
 }
 .titulos__cuando{
     color: #FFF;
+
 }
 .fondoTitulos{
     background-color: #f0f0f0;
-    
 }
 .faltan{
     margin-top: 1rem;
@@ -106,11 +106,14 @@ body{
 }
 
 .cuando__contenido__texto{
-    font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Ms Madi', cursive;
+    /* font-family: 'Pacifico', cursive; */
 }
 #temporizador{
     font-family: 'Ecuyer';
+    font-size: 2rem;
 }
 .temporizador{
     background-color: #7ABFAA; 
@@ -131,34 +134,19 @@ body{
     padding: 2rem;
 }
 
-/* .donde__card {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-family: 'Sofia', cursive;
-} */
-
-/* .donde__card__imagen{
-    width: 48%;
-    margin: auto;
-} */
-/* .donde__card__imagen img {
-    width: 100%;
-    height: 400px;
-    border-radius: 3px;
-} */
+.donde__card__imagen{
+    width: 200px; 
+    height: 150px;
+    border-radius: 5%;
+    box-shadow: 2px 6px 20px 0px;
+}
 .donde__card__titulo{
-    -webkit-transform: rotate(-7deg);
-    transform: rotate(-7deg);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
     font-size: 4.5rem;
     font-family: 'Ms Madi', cursive;
 }
 .donde__card__texto{
     margin:auto;
-    height: 500px;
+    height: 550px;
     text-align: center;
     font-size: 1.5rem;
     width: 70%;
@@ -169,9 +157,8 @@ body{
 .card__button{
     background-color: #c4a246;
     color: #333;
-    font-family: 'Montserrat';
-    border-radius: 10px 10px 40px 40px;
-    padding: 8px
+    border-radius: 100px 15px 100px 15px;
+    padding: 8px 20px
 }
 
 .card__img{
@@ -242,7 +229,7 @@ input, select{
 }
 .buttonsWhatsap__contenido{
     padding: 10px;
-    width: 30%;
+    width: 35%;
     color: #f0f0f0;
     background-color:  #c4a246;
     border-radius: 100px 15px 100px 15px;
@@ -260,6 +247,10 @@ background-color: wheat;
     align-items: center;
     flex-direction: column;
 }
+.insta__icon{
+    color: #c4a246;
+    font-size: 5rem;
+}
 .tag{
     color: #333;
     text-decoration: none;
@@ -271,18 +262,17 @@ background-color: wheat;
 /* baner final  */
 
 .banner__final{
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     width: 100%;
     z-index: 1;
-    background-color: #f0f0f0;
     color: wheat;
 }
 
 
 @media screen and (max-width: 425px){
     .titulos{
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: 1px;
     }
     .Banner__contenido__texto{
@@ -295,6 +285,9 @@ background-color: wheat;
         padding: 2.2rem;
     }
     .cuando__contenido__texto{
+        font-size: 2rem;
+    }
+    #temporizador{
         font-size: 1.2rem;
     }
     .faltan{
@@ -306,16 +299,6 @@ background-color: wheat;
     .donde__card{
         flex-direction: column-reverse; 
     }
-    /* .rev{
-        flex-direction: column
-    } */
-    /* .donde__card__imagen{
-        width: 95%;
-        margin: auto;
-    } */
-    /* .donde__card__imagen img{
-        height: 350px;
-    } */
     .donde__card__texto{
         font-size: 1rem;
         width: 100%;
