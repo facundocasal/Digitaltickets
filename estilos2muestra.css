@@ -55,7 +55,6 @@ body{
 .titulos{
     font-size: 5.5rem;  
     font-family: 'Ms Madi', cursive;
-    /* font-family: 'Dancing Script', cursive; */
     letter-spacing: 3px;
     text-align: center;
     color: #c4a246;
@@ -95,7 +94,7 @@ body{
 	background-color: rgba(0,0,0,0.6);
 }
 .cuando__contenido{
-    padding: 1.2rem;
+    padding: 1.5rem;
     position: relative;
     color: #f0f0f0;
     height: 100%;
@@ -197,7 +196,7 @@ iframe{
     align-items: center;
 }
 .dressCode__imgen img {
-    width: 150px;
+    width: 100px;
 }
 .dressCode__texto{
     font-size: 2rem;
@@ -293,7 +292,7 @@ background-color: wheat;
         height: 90vh;
     }
     .cuando__contenido{
-        padding: 1.5rem;
+        padding: 2.2rem;
     }
     .cuando__contenido__texto{
         font-size: 1.2rem;
@@ -325,7 +324,7 @@ background-color: wheat;
         width: 50%;
     }
     .dressCode__imgen img {
-        width: 100px;
+        width: 80px;
     }
     .dressCode__texto{
         font-size: 1.5rem;

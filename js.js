@@ -95,7 +95,7 @@ function enviarMsjNovia () {
     let inputName = document.getElementById("nombreMsj").value;
     let inputAsistencia = document.getElementById("asistencia").value;
     let inputPedidos = document.getElementById("pedidosEspeciales").value
-    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias por la invitación y Felicidades a los novios 🎉 "
+    let url = "https://api.whatsapp.com/send/?phone=542966508687&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias por la invitación y Felicidades a los novios 🎉 "
     window.open(url)
 }
 
