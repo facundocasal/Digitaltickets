@@ -114,6 +114,12 @@ p{
 #temporizador{
     font-family: 'Ecuyer';
 }
+.temporizador{
+    background-color: #7ABFAA; 
+    padding: 1.5rem;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 9px 3px;
+}
 
 
 /* frase */

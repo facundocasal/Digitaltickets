@@ -12,12 +12,6 @@
     font-style: normal;
     font-weight: normal;
 }
-/* @font-face {
-    font-family: 'Boulevard';
-    src: url('font/Boulevard.otf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-} */
 
 p{
     margin-bottom: 0;
@@ -94,7 +88,7 @@ body{
 	background-color: rgba(0,0,0,0.6);
 }
 .cuando__contenido{
-    padding: 1.5rem;
+    padding: 1rem;
     position: relative;
     color: #f0f0f0;
     height: 100%;
@@ -109,22 +103,11 @@ body{
     font-size: 5rem;
     font-weight: 100;
     font-family: 'Ms Madi', cursive;
-    /* font-family: 'Pacifico', cursive; */
 }
 #temporizador{
     font-family: 'Ecuyer';
     font-size: 2rem;
 }
-.temporizador{
-    background-color: #7ABFAA; 
-    padding: 1.5rem;
-    border-radius: 100%;
-    box-shadow: inset 1px 1px 9px 3px;
-}
-
-
-
-/* frase */
 
 /* Donde */
 
@@ -267,6 +250,13 @@ background-color: wheat;
     width: 100%;
     z-index: 1;
     color: wheat;
+
+}
+/* footer  */
+
+footer{
+    height: 50px;
+    background-color: #ffefd5;
 }
 
 
@@ -283,6 +273,7 @@ background-color: wheat;
     }
     .cuando__contenido{
         padding: 2.2rem;
+        justify-content: space-around;
     }
     .cuando__contenido__texto{
         font-size: 2rem;
@@ -342,11 +333,17 @@ background-color: wheat;
         margin-top: 2rem;
     }
 }
-
-
-/* footer  */
-
-footer{
-    height: 50px;
-    background-color: #ffefd5;
+@media screen and (max-width: 375px){
+    .titulos{
+        font-size: 2.5rem;
+    }
+    #temporizador{
+        font-size: 1.1rem;
+    }
+    .mesaRegalos{
+        font-size: 0.8rem;
+    }
+    .buttonsWhatsap{
+        width: 100%;
+    }
 }

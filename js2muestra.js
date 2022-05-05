@@ -2,6 +2,10 @@ window.addEventListener('load', function(event) {
     Swal.fire({
         title: 'Estás invitadx al',
         text: 'Casamiento de Luciana & Luis',
+        focusConfirmButton: false,
+        confirmButtonAriaLabel: 'Ver invitación',
+        confirmButtonText:'Ver invitación',
+        confirmButtonColor: '#c4a246',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
         },
@@ -88,50 +92,29 @@ writing("Luciana & Luis")
 
 
 // mensaje Whatsap
+// mensaje Whatsap
 
 let btnwts1 = document.getElementById("whatsap1")
 
-btnwts1.addEventListener(`click`,enviarMsj)
+btnwts1.addEventListener(`click`,enviarMsjNovia)
 
 let btnwts2 = document.getElementById("whatsap2")
 
-btnwts2.addEventListener("click",enviarMsj)
+btnwts2.addEventListener("click",enviarMsjNovio)
 
-function enviarMsj () { 
+function enviarMsjNovia () { 
     let inputName = document.getElementById("nombreMsj").value;
     let inputAsistencia = document.getElementById("asistencia").value;
     let inputPedidos = document.getElementById("pedidosEspeciales").value
-    let url = "https://api.whatsapp.com/send/?phone=541160410242&text=Nombre: "+ inputName + ", Confirmo que " + inputAsistencia +" al casamiento.💍"+ "%0A Pedidos Especiales: " + inputPedidos+"." +" %0A Gracias y Felicidades a los novios 🎉 "
+    let url = "https://api.whatsapp.com/send/?phone=542966508687&text=*Nombre y apellido:* "+ inputName + ", Confirmo que *" + inputAsistencia +"* al casamiento.💍"+ "%0A *Pedidos Especiales:* " + inputPedidos+"." +" %0A Felicidades a los novios 👰🏻‍♀💗🤵🏻‍♂🎉 "
     window.open(url)
 }
 
+function enviarMsjNovio () { 
+    let inputName = document.getElementById("nombreMsj").value;
+    let inputAsistencia = document.getElementById("asistencia").value;
+    let inputPedidos = document.getElementById("pedidosEspeciales").value
+    let url = "https://api.whatsapp.com/send/?phone=541159918246&text=*Nombre y apellido:* "+ inputName + ", Confirmo que *" + inputAsistencia +"* al casamiento.💍"+ "%0A *Pedidos Especiales:* " + inputPedidos+"." +" %0A Felicidades a los novios 👰🏻‍♀💗🤵🏻‍♂🎉 "
+    window.open(url)
+}
 });
-
-
-
-// let btnpdf = document.getElementById("btnCrearPdf")
-
-// let docum = document.body
-
-// function generatePDF(){
-//     const element = document.body;
-//     html2pdf().set({
-//             margin: 1,
-//             filename: "document.pdf",
-//             image: {
-//                 type: "jpeg",
-//                 quality: 0.98
-//             },
-//             html2canvas:{
-//                 scale: 3,
-//                 letterrendering: true, 
-//             },
-//             jsPDF:{
-//                 unit: "in",
-//                 format: "oficio",
-//                 orientation: 'landscape'
-//             }
-//         })
-//     .from(element)
-//     .save();
-// }
