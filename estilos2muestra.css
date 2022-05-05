@@ -60,10 +60,6 @@ body{
 .fondoTitulos{
     background-color: #f0f0f0;
 }
-.faltan{
-    margin-top: 1rem;
-    width: 50%;
-}
 /* Cuando */
 
 
@@ -265,9 +261,6 @@ footer{
         font-size: 3rem;
         letter-spacing: 1px;
     }
-    .Banner__contenido__texto{
-        font-size: 1rem;
-    }
     .cuando{
         height: 90vh;
     }
@@ -276,7 +269,7 @@ footer{
         justify-content: space-around;
     }
     .cuando__contenido__texto{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     #temporizador{
         font-size: 1.2rem;
