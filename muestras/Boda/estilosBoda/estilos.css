@@ -8,13 +8,13 @@
 
 @font-face {
     font-family: 'Ecuyer';
-    src: url('font/EcuyerR0902.ttf') format('truetype');
+    src: url('../font/EcuyerR0902.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'Boulevard';
-    src: url('font/Boulevard.otf') format('truetype');
+    src: url('../font/Boulevard.otf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }

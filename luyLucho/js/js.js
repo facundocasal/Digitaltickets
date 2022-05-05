@@ -3,7 +3,6 @@ window.addEventListener('load', function(event) {
         title: 'Estás invitadx al',
         text: 'Casamiento de Luciana & Luis',
         focusConfirmButton: false,
-        focusConfirm: false,
         confirmButtonAriaLabel: 'Ver invitación',
         confirmButtonText:'Ver invitación',
         confirmButtonColor: '#c4a246',

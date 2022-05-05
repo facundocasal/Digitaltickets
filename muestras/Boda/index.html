@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamiento Luciana & Luis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./estilosBoda/estilos.css">
+</head>
+
+<body>
+    <!-- banner principal  -->
+    <div class="banner">
+        <div class=" text-black w-100 h-100 d-flex justify-content-around align-items-center">
+            <div class="Banner__contenido " data-aos="fade-up" data-aos-duration="2000">
+                <div class="fw-bold encabezado  ">
+                    <div class="mt-4">
+                        <h1 id="NosCasamosNombres" class="titulos"></h1>
+                    </div>
+                    <div>
+                        <h1 id="NosCasamos" class="titulos "></h1>
+                    </div>
+                    <div class="contenedor__banner" data-aos="fade-up" data-aos-duration="5000" data-aos-anchor-placement="center-bottom">
+                        <p class="Banner__contenido__texto"> Queremos que seas parte de <br>este momento tan especial</p> 
+                    </div>
+                    <div>
+                        <a href="#cuando"><i class="fa-solid fa-angle-down fa-bounce flecha"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fin banner principal  -->
+    <!-- Cuando -->
+    <div id="cuando" class="cuando">
+        <div class="cuando__contenido align-items-center mt-sm-3">
+            <div>
+                <p class="titulos" style="color: #f0f0f0;"><strong>Cuándo</strong></p>
+                <p class="cuando__contenido__texto "> Viernes 7 De Octubre Del 2022</p>
+            </div>
+            <div class="faltan  w-50  d-flex  justify-content-evenly align-items-center">
+                <p class="titulos" style="color:#f0f0f0;"><strong>Faltan</strong></p>
+                <div class="temporizador">
+                    <p class="cuando__contenido__texto" id="temporizador"></p>
+                </div>
+                <p class="titulos titulos__cuando">Días.</p>
+            </div>
+        </div>
+    </div>
+    <!-- fin Cuando -->
+
+    <!-- donde -->
+    <div>
+        <div>
+            <h1 class="titulos fondoTitulos mb-0 mt-1 shadow">Dónde</h1>
+        </div>
+        <div class="donde__card contenidoFondo p-2 mt-0">
+            <div class="donde__card__imagen" data-aos="zoom-in">
+                <img src="http://nexofm.com.ar/download/multimedia.grande.864df7d67d47cc4f.64346661626362333363613734313838373138636434353933613763363463305f6772616e64652e6a7067.jpg" alt="">
+            </div>
+            <div class="donde__card__texto  mt-1">
+
+                <h3 class=" donde__card__titulo" style="color: #947a33;">Ceremonia </h3>
+
+                <div class="p-2">
+                    <p>Te invitamos a nuestra ceremonia el día 7 de Octubre a las 16:45 hs. en la <strong>Iglesia Nuestra Señora del Carmen</strong>, Villa Allende, Córdoba. <br> Te esperamos!</p>
+                    <!-- <p> <strong>Parroquia:</strong> Iglesia Nuestra Señora del Carmen</p>
+                    <p> <strong>Horario:</strong> 18:00 Hs</p>
+                    <p class=""><strong>Dirección:</strong> Av. Del Carmen 200, Villa Allende, Córdoba <i
+                            class="bi bi-caret-down-fill"></i></p> -->
+                    <button type="button" class="btn fw-bold card__button shadow" data-bs-toggle="modal"
+                        data-bs-target="#religiosa">
+                        Cómo llegar
+                    </button>
+                    <div class="card__img">
+                        <img src="imagenes/weding.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal fade" id="religiosa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Ubicación de la iglesia <i class="fa-solid fa-map"></i></h5>
+                                <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body flex-column d-flex align-content-center">
+                                <iframe class="m-1"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.383181619447!2d-64.30077458485488!3d-31.293152781445457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d056aa66e5f%3A0x8d59cccda2c33d4f!2sIglesia%20Nuestra%20Se%C3%B1ora%20del%20Carmen!5e0!3m2!1ses-419!2sar!4v1650860051336!5m2!1ses-419!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="textoModal">
+                                    <p><strong>Iglesia Nuestra Señora del Carmen</strong></p>
+                                    <p class="text-center"><strong>Dirección:</strong> Av. Del Carmen 200, Villa Allende, Córdoba <i class="fa-solid fa-location-dot"></i></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn  fw-bold card__button shadow"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="donde__card  rev p-2 contenidoFondo">
+            <div class="donde__card__texto">
+
+                <h3 class=" donde__card__titulo" style="color:#947a33">Fiesta </h3>
+                <div class="p-2">
+                    <p>Después de la ceremonia, te esperamos para festejar a partir de las 18:00 hs. en <strong>Mansueto 1912</strong>. <br>
+                        No olvides confirmar tu presencia al final de la invitación!</p>
+                    <!-- <p> <strong>Salon:</strong> Mansueto 1912</p>
+                    <p><strong>Horario:</strong> 20:00 Hs</p>
+                    <p class=""><strong>Dirección:</strong>  Aguaribay S/n, X 5149 Saldan, Córdoba <i
+                            class="bi bi-caret-down-fill"></i></p> -->
+                    <button type="button" class="btn shadow fw-bold card__button " data-bs-toggle="modal"
+                        data-bs-target="#fiesta">
+                        Cómo llegar
+                    </button>
+                    <div class="card__img">
+                        <img src="imagenes/copas.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal fade" id="fiesta" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Ubicación del salón <i class="fa-solid fa-map"></i></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex  flex-column align-content-center">
+                                <iframe class="m-1"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.142711981019!2d-64.30533788255615!3d-31.327431600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d6164ec1a69%3A0xfe084d85fd5c39e1!2sMansueto%201912!5e0!3m2!1ses-419!2sar!4v1650859907882!5m2!1ses-419!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="textoModal">
+                                    <p><strong>Salon:</strong> Mansueto 1912</p>
+                                    <p class="text-center"><strong>Dirección:</strong>  Aguaribay S/n, X 5149 Saldan, Córdoba <i class="fa-solid fa-location-dot"></i></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn fw-bold card__button shadow"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="donde__card__imagen" data-aos="zoom-in">
+                <img src="http://viroeventos.com/wp-content/uploads/2017/07/IMG_7393-e1603293338451-300x300.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!--fin de donde  -->
+
+    <!-- Drees code  -->
+
+    <div>
+        <div class="">
+            <h1 class="titulos shadow fondoTitulos mt-1 mb-0">Dress Code</h1>
+        </div>
+        <div class="dressCode contenidoFondo p-2">
+            <div class="dressCode__imgen">
+                <img class="img-fluid" src="https://aitorapezteguia.com/wp-content/uploads/2020/05/004-prueba-traje-preboda-768x768.png" alt="dressCode">
+            </div>
+            <div class="dressCode__texto fst-italic">
+                <p>Elegante</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- fin de Drees code  -->
+
+    <!-- carrusel -->
+
+    <div class="" id="fotos">
+        <div>
+            <h1 class=" text-center titulos  shadow fondoTitulos mb-0 mt-1">Nosotros... </h1>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide overflow-hidden p-1 mt-1" data-bs-interval="2000"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/luylucho/img1.png" class="d-block  m-auto imagenCarrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/luylucho/img5.png" class="d-block  m-auto imagenCarrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/luylucho/img6.png" class="d-block  m-auto imagenCarrusel" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="imagenes/luylucho/img3.png" class="d-block  m-auto imagenCarrusel" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- fin carrusel  -->
+
+    <!-- mesa de regalos  -->
+    <div class="overflow-hidden text-center " id="mesa">
+        <h1 class="fst-italic text-center shadow titulos fondoTitulos mb-0 mt-1"> Mesa de regalos  <i class="fa-solid fa-gift fs-1"></i> </h1>
+        <div class="mesaRegalos contenidoFondo">
+            <p class="text-center fw-bold mt-2">Si deseas hacernos un regalo podés colaborar con nuestra Luna de Miel. ¡Muchas gracias!</p>
+            <button type="button" class="btn fw-bold card__button shadow" data-bs-toggle="modal" data-bs-target="#mesaRegalos">
+                Ver Datos
+            </button>
+            <div class="modal fade" id="mesaRegalos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold" id="exampleModalLabel">Mesa de regalos <i
+                                    class="fa-solid fa-gift"></i>
+                                </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex  flex-column align-content-center">
+                            <div class="textoModal">
+                                <h3>Banco Santander</h3>
+                                <p><strong>Número de cuenta:</strong> 064-375364/2</p>
+                                <p><strong>CBU:</strong> 0720064988000037536422</p>
+                                <p><strong>Alias:</strong> luciana.ramirez1</p>
+                                <p><strong>Titular:</strong> Ramirez Luciana</p>
+                            </div>
+                            <div class="textoModal">
+                                <h3>Banco Santander</h3>
+                                <p><strong>Número de cuenta:</strong> 048-141280/6</p>
+                                <p><strong>CBU:</strong> 0720048988000014128068</p>
+                                <p><strong>Alias:</strong> luischiaraviglio</p>
+                                <p><strong>Titular:</strong> Chiaraviglio Luis Daniel</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fw-bold card__button shadow"
+                                data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="contenidoFondo p-2">
+            <p class="text-center fw-bold">Si deseas hacernos un regalo podés colaborar con nuestra Luna de Miel.
+                Muchas gracias! <i class="fa-solid fa-square-arrow-down"></i></p>
+            <p class=" text-center m-3">
+                <strong>CBU:</strong> 4as65d4a65d46a5d <br>
+                <strong>Alias:</strong> casa.perro.gato <br>
+                <strong>Titular:</strong> lucho&luciana
+            </p>
+            <h2 class="fst-italic text-center "><strong>Gracias</strong></h2>
+        </div> -->
+    </div>
+    <!-- fin mesa de reaglos  -->
+
+    <!-- confirmacion de asistencia  -->
+
+    <div id="confirmacion" class="confirmacion">
+        <h3 class=" fst-italic shadow titulos fondoTitulos mb-0 mt-1 ">Confirmar Asistencia</h3>
+        <div class="text-center confirmacion__contenido  contenidoFondo p-2">
+            <form action="">
+                <p>Confírmanos tu asistencia en el siguiente formulario:</p>
+                <input class="" type="text" id="nombreMsj" placeholder="Nombre/s">
+                <select class="" name="asistencia" id="asistencia">
+                    <option hidden selected value="">Confirmar Asistencia</option>
+                    <option >Asistiré</option>
+                    <option >No Asistiré </option>
+                </select>
+                <p class="fw-bold">Pedidos Especiales </p>
+                <select class="" name="pedidosEspeciales " id="pedidosEspeciales">
+                    <option hidden selected value="Sin restricción"> Pedidos Especiales</option>
+                    <option >Sin restricción</option>
+                    <option >Menu Vegano</option>
+                    <option >Menu Celíaco</option>
+                    <option >Menu Vegetariano</option>
+                </select>
+            </form>
+            <div class="buttonsWhatsap">
+                <button data-aos="zoom-in" type="button" id="whatsap1"
+                    class="shadow btn text-decoration-none  fw-bold buttonsWhatsap__contenido "><a>👰🏻‍♀️ Luciana
+                         <i  class="fa-brands fa-whatsapp fw-bold"></i></a></button>
+                <button data-aos="zoom-in" type="button" id="whatsap2"
+                    class="shadow btn text-decoration-none  fw-bold buttonsWhatsap__contenido "><a>🤵🏻 Luis
+                         <i  class="fa-brands fa-whatsapp fw-bold"></i></a></button>
+            </div>
+            <p class="mt-4">Te esperamos!</p>
+        </div>
+    </div>
+    <!-- fin confirmacion de asistencia  -->
+
+
+    <div class="fondoTitulos p-3 text-center  insta fw-bold">
+        <p>Usa nuestro hashtag en Instagram para etiquetarnos en tus fotos y videos</p>
+        <a data-aos="flip-left" class="tag fw-bold" href="https://www.instagram.com/explore/tags/bodaluylucho/"><i
+                class="fa-solid fa-hashtag"></i>bodaluylucho <i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+
+
+
+
+
+
+    <!-- banner final  -->
+    <div class="banner__final mt-1">
+        <div class="bg-black bg-opacity-50 w-100 h-100 d-flex justify-content-around align-items-center">
+            <div class="Banner__contenido" data-aos="fade-up" data-aos-duration="2000">
+                <div class="banner__final__titulo text-center p-3">
+                    <h3 class="text-light fst-italic ">¡Gracias por acompañarnos en nuestro gran día!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="./jsBoda/js.js"></script>
+
+
+
+</body>
+
+</html>

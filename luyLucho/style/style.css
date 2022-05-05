@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Ecuyer';
-    src: url('font/EcuyerR0902.ttf') format('truetype');
+    src: url('../font/EcuyerR0902.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -22,7 +22,7 @@ body{
 
 }
 /* baneer */
-
+/* 
 .banner{
     height: 100vh;
     background-image: url('imagenes/flower.png');
@@ -38,7 +38,7 @@ body{
         text-align: center;
         align-content: center;
         justify-content: space-between;
-}
+} */
 
 
 .flecha{
@@ -67,7 +67,7 @@ body{
         height: 100vh;
         text-align: center;
         background-position: center center;
-        background-image: url('imagenes/luylucho/img2.png');
+        background-image: url('../luyluchofotos/img2.png');
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -236,7 +236,7 @@ background-color: wheat;
     font-size: 2.5rem;
 }
 .tag:hover{
-    color: #60a794e6;
+    color: #c4a246;
 }
 /* baner final  */
 
