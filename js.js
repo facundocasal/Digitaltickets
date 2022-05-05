@@ -33,7 +33,7 @@ const countdown = (deadline , elem , finalMessage) => {
         
         let t = getRemainTime(deadline);
 
-        el.innerHTML = `${t.remainDays}  Dias  ${t.remainHours} Hs  ${t.remainMinutos} M  ${t.remainseconds} S`
+        el.innerHTML = `${t.remainDays}`
         
         if (t.remainTime <= 1){
             clearInterval(timeUpdate)
