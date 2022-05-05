@@ -12,40 +12,16 @@
     font-style: normal;
     font-weight: normal;
 }
-
 p{
     margin-bottom: 0;
 }
-
 body{
     background-color: #e9e9df;
-
 }
-/* baneer */
-/* 
-.banner{
-    height: 100vh;
-    background-image: url('imagenes/flower.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center ;
-    margin-bottom: 0.5rem;
-
-}
-.encabezado{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-content: center;
-        justify-content: space-between;
-} */
-
-
 .flecha{
     font-size: 2rem;
     color: #FFF;
 }
-
 .titulos{
     font-size: 5.5rem;  
     font-family: 'Ms Madi', cursive;
@@ -61,14 +37,12 @@ body{
     background-color: #f0f0f0;
 }
 /* Cuando */
-
-
 .cuando{
         height: 100vh;
         text-align: center;
         background-position: center center;
         background-image: url('../luyluchofotos/img2.png');
-        background-size: cover;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
         background-attachment: fixed;
@@ -81,7 +55,7 @@ body{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.5);
 }
 .cuando__contenido{
     padding: 1rem;
@@ -106,7 +80,6 @@ body{
 }
 
 /* Donde */
-
 .donde{
     display: flex;
     height: auto;
@@ -125,7 +98,6 @@ body{
 }
 .donde__card__texto{
     margin:auto;
-    height: 550px;
     text-align: center;
     font-size: 1.5rem;
     width: 70%;
@@ -261,15 +233,12 @@ footer{
         font-size: 3rem;
         letter-spacing: 1px;
     }
-    .cuando{
-        height: 90vh;
-    }
     .cuando__contenido{
         padding: 2.2rem;
         justify-content: space-around;
     }
     .cuando__contenido__texto{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     #temporizador{
         font-size: 1.2rem;
@@ -280,8 +249,8 @@ footer{
     .donde{
         flex-direction: column;
     }
-    .donde__card{
-        flex-direction: column-reverse; 
+    .fiesta{
+        margin-top: 1rem;
     }
     .donde__card__texto{
         font-size: 1rem;
