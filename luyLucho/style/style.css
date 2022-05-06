@@ -38,16 +38,16 @@ body{
 }
 /* Cuando */
 .cuando{
-        height: 100vh;
-        text-align: center;
-        background-position: center center;
-        background-image: url('../luyluchofotos/img2.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        position: relative;
-        background-attachment: fixed;
-        background-position: center ;
+    height: 100vh;
+    text-align: center;
+    background-position: center center;
+    background-image: url('../luyluchofotos/img2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
 }
+
 .cuando:before {
 	content:'';
 	position: absolute;
