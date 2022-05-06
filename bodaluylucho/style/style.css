@@ -27,7 +27,7 @@ body{
     font-family: 'Ms Madi', cursive;
     letter-spacing: 3px;
     text-align: center;
-    color: #333;
+    color: #c4a246;
 }
 .titulos__cuando{
     color: #FFF;
@@ -255,7 +255,7 @@ footer{
         font-size: 3.5rem;
     }
     #temporizador{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .faltan{
         width: 100%;
@@ -305,6 +305,11 @@ footer{
     .buttonsWhatsap__contenido{
         padding: 5px;
     }
+
+    .insta{
+        height: 380px;
+    }
+
     .banner__final__titulo{
         margin-top: 2rem;
     }
