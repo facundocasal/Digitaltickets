@@ -27,7 +27,7 @@ body{
     font-family: 'Ms Madi', cursive;
     letter-spacing: 3px;
     text-align: center;
-    color: #c4a246;
+    color: #333;
 }
 .titulos__cuando{
     color: #FFF;
@@ -45,7 +45,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    /* background-attachment: fixed; */
 }
 
 .cuando:before {
@@ -84,8 +83,15 @@ body{
     display: flex;
     height: auto;
     padding: 2rem;
+    justify-content: space-around;
 }
-
+.donde__card{
+    justify-content: space-between;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+}
 .donde__card__imagen{
     width: 200px; 
     height: 150px;
@@ -93,18 +99,19 @@ body{
     box-shadow: 2px 6px 20px 0px;
 }
 .donde__card__titulo{
+    width: 100%;
+    text-align: center;
     font-size: 4.5rem;
     font-family: 'Ms Madi', cursive;
 }
+
 .donde__card__texto{
     margin:auto;
     text-align: center;
-    font-size: 1.5rem;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    font-size: 1.2rem;
+    width: 90%;
+} 
+
 .card__button{
     background-color: #c4a246;
     color: #333;
@@ -226,9 +233,16 @@ footer{
     height: 50px;
     background-color: #ffefd5;
 }
+@media screen and (max-width: 800px){
+    form{
+        width: 60%;
+    }
+    .buttonsWhatsap{
+        width: 60%;
+    }
+}
 
-
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
     .titulos{
         font-size: 3rem;
         letter-spacing: 1px;
@@ -241,13 +255,16 @@ footer{
         font-size: 3.5rem;
     }
     #temporizador{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .faltan{
         width: 100%;
     }
     .donde{
         flex-direction: column;
+    }
+    .donde__card{
+        width: 100%;
     }
     .fiesta{
         margin-top: 1rem;
@@ -276,10 +293,7 @@ footer{
         overflow: hidden;
     }
     form{
-        display: flex;
-        flex-direction: column;
         width: 80%;
-        margin: auto;
     }
 
     form > input, select , #whatsap1 , #whatsap2{
