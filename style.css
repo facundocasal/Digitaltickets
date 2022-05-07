@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 100px;
+}
+.header{
+    padding: 55px 0px
+}
+.menu{
+    float: right
+}
+.menu li{
+    display: inline-block
+}
+.menu ul li a{
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.menu ul li a:hover{
+    color: #12c2a7
+}
+.coming {
+    text-align: center;
+    padding-top: 30px;
+}
+.coming h1{
+    color: #f15c58;
+    font-size: 55px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    font-family: 'Koulen', 'Raleway', sans-serif;
+}
+.coming h2{
+    margin-top: 1.5rem;
+    color: #f15c58;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+.coming p{
+    color: #8f8686;
+    font-size: 27px;
+    padding-top: 80px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.email{
+    text-align: center;
+}
+.contacto{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+.contacto__button{
+    border-radius: 100px 15px 100px 15px;
+    padding: 10px 25px;
+}
+img{
+    width: 200px;
+    height: 150px;
+}
